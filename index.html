@@ -66,12 +66,13 @@
   @media(max-width:820px){.nav-links a:not(.btn){display:none}}
 
   /* hero */
-  .hero{position:relative;padding:70px 0 80px;overflow:hidden}
+  .hero{position:relative;padding:70px 0 80px;overflow:hidden;
+    background:linear-gradient(165deg,#ffe3ef 0%,#ffe9d5 42%,#e3fbec 100%)}
   .hero .wrap{position:relative;z-index:2}
-  .blob{position:absolute;border-radius:50%;filter:blur(8px);opacity:.55;z-index:0}
-  .b1{width:340px;height:340px;background:radial-gradient(circle at 30% 30%,#ffd6e8,#ff9ec5);top:-80px;right:-60px}
-  .b2{width:300px;height:300px;background:radial-gradient(circle at 30% 30%,#c8f5dc,#7fe0a8);bottom:-90px;left:-70px}
-  .b3{width:220px;height:220px;background:radial-gradient(circle at 30% 30%,#ffe6bf,#ffc266);top:120px;left:42%}
+  .blob{position:absolute;border-radius:50%;filter:blur(4px);opacity:.92;z-index:0}
+  .b1{width:360px;height:360px;background:radial-gradient(circle at 32% 30%,#ff9ec8,#ff2d86);top:-90px;right:-70px}
+  .b2{width:320px;height:320px;background:radial-gradient(circle at 32% 30%,#73e6a4,#15b85e);bottom:-100px;left:-80px}
+  .b3{width:250px;height:250px;background:radial-gradient(circle at 32% 30%,#ffc266,#ff8a00);top:110px;left:44%}
   .hero h1{font-size:clamp(2rem,7.5vw,3.4rem);font-weight:800;line-height:1.25}
   .hero h1 .hl{background:linear-gradient(transparent 60%,#ffe08a 60%);padding:0 4px}
   .hero .sub{margin:18px 0 8px;font-size:1.05rem;color:var(--ink)}
@@ -127,6 +128,22 @@
   .seat{flex:none;font-size:.8rem;font-weight:700;color:#fff;background:var(--pink);padding:4px 12px;border-radius:999px}
   .prep{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
   .prep span{background:#fff;border:2px solid #f0e6d8;border-radius:999px;padding:8px 16px;font-weight:700;font-size:.9rem}
+  .note{margin-top:18px;background:#fff;border-left:6px solid var(--green);border-radius:14px;
+    padding:16px 20px;box-shadow:var(--ring);font-size:.96rem}
+  .note strong{color:var(--green-d)}
+
+  /* classrooms */
+  .rooms{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:8px}
+  @media(max-width:860px){.rooms{grid-template-columns:1fr}}
+  .room{background:#fff;border-radius:var(--round);box-shadow:var(--ring);padding:22px 22px 24px;border-top:6px solid var(--green)}
+  .room:nth-child(3n+2){border-top-color:var(--pink)}
+  .room:nth-child(3n){border-top-color:var(--orange)}
+  .room .area{display:inline-block;font-family:"M PLUS Rounded 1c";font-weight:800;font-size:1.25rem;margin-bottom:2px}
+  .room .rname{color:var(--muted);font-size:.9rem;margin-bottom:12px}
+  .room .meta{font-size:.92rem;margin-bottom:10px}
+  .room .meta b{color:var(--ink)}
+  .room .times{display:flex;flex-wrap:wrap;gap:8px}
+  .room .times span{background:#f5faf6;border-radius:10px;padding:6px 12px;font-size:.85rem;font-weight:700;color:var(--ink)}
 
   /* instructor */
   .inst{display:grid;grid-template-columns:280px 1fr;gap:28px;align-items:center;
@@ -193,9 +210,9 @@
     <h1>できた！が増える、<br><span class="hl">エアトラック体操</span>。</h1>
     <p class="sub">「何か運動を始めさせたい」「体の使い方を知ってほしい」「好きなスポーツを見つけてあげたい」<br>そんな保護者の方にぴったりの教室です。初心者・運動が苦手なお子さんも大歓迎！</p>
     <div class="pills">
-      <span class="pill"><span class="e">🛟</span>頭を打っても痛くない安全マット</span>
-      <span class="pill"><span class="e">🧑‍🏫</span>指導者3名・エアマット4枚</span>
-      <span class="pill"><span class="e">🏟️</span>バスケコートより広い体育館</span>
+      <span class="pill"><span class="e">🌱</span>はじめての習い事に</span>
+      <span class="pill"><span class="e">🤸</span>大きなトランポリンマット</span>
+      <span class="pill"><span class="e">⚽</span>スポーツの入り口</span>
     </div>
     <div class="cta-row">
       <a class="btn line" href="https://lin.ee/Q6KsIKI" target="_blank" rel="noopener">📱 無料体験を申し込む</a>
@@ -232,7 +249,7 @@
     <p class="sec-lead">「できた！」の喜びから、生涯スポーツの入り口へ。</p>
   </div>
   <div class="wrap grid g3">
-    <div class="feat reveal"><div class="num n-green">1</div><div><h3>できないことが、できる喜び</h3><p>練習すれば必ずできるようになると知ってもらいます。体操は上達が目に見えてわかりやすく、子どもが自分から主体的に練習するように。指導者3名・エアマット4枚で、思う存分技を練習できます。</p></div></div>
+    <div class="feat reveal"><div class="num n-green">1</div><div><h3>できないことが、できる喜び</h3><p>練習すれば必ずできるようになると知ってもらいます。体操は上達が目に見えてわかりやすく、子どもが自分から主体的に練習するように。一人ひとりにしっかり時間を取り、思う存分技を練習できます。</p></div></div>
     <div class="feat reveal"><div class="num n-pink">2</div><div><h3>体幹を鍛え、体の使い方を知る</h3><p>毎回いろいろなジャンプや体幹運動を実施。エアトランポリンは通常の約2倍跳べるので、楽しみながら体幹を鍛えられます。その楽しさはぜひ一度体験してみてください！</p></div></div>
     <div class="feat reveal"><div class="num n-orange">3</div><div><h3>好きで得意なスポーツを見つける</h3><p>小学生は関連クラブ「sowers sports club」に優先入会できます。9種類のスポーツを体験でき、好きで得意なスポーツがきっと見つかります。体操で体の使い方を知り、生涯スポーツを楽しめる生徒を目指します。</p></div></div>
   </div>
@@ -245,7 +262,7 @@
     <h2 class="sec-title">のびのび動ける環境</h2>
   </div>
   <div class="wrap grid g2">
-    <div class="card reveal"><div class="top-line tl-pink"></div><div class="ph"><img loading="lazy" src="https://cdn.peraichi.com/userData/5b3e181c-c4bc-4b30-8f41-0f8f0a00002b/img/5c20312784f17/original.jpeg" alt="広い体育館"></div><div class="body"><h3>🏃 いっぱい走れる！広い体育館</h3><p>バスケットコートより大きい体育館で練習。力が有り余るお子さんも力いっぱい走り回れます。練習の合間には鬼ごっこで楽しく体を温めています。</p></div></div>
+    <div class="card reveal"><div class="top-line tl-pink"></div><div class="ph"><img loading="lazy" src="https://cdn.peraichi.com/userData/5b3e181c-c4bc-4b30-8f41-0f8f0a00002b/img/5c20312784f17/original.jpeg" alt="広い体育館"></div><div class="body"><h3>🏃 のびのび動ける広い体育館</h3><p>広い体育館で練習しているので、力が有り余るお子さんも思いきり走り回れます。練習の合間には鬼ごっこで楽しく体を温めています。</p></div></div>
     <div class="card reveal"><div class="top-line tl-orange"></div><div class="ph"><img loading="lazy" src="https://cdn.peraichi.com/userData/5b3e181c-c4bc-4b30-8f41-0f8f0a00002b/img/5c18cb90a1b14/original.jpeg" alt="アクセスの良い立地"></div><div class="body"><h3>🚗 保護者も嬉しいアクセス</h3><p>徳島県庁から南へ10分、徳島市論田町のB&G体育館。近くにマルナカ新浜店があり練習中にお買い物も。プールも隣接し夏は水遊びもできます。</p></div></div>
   </div>
 </section>
@@ -280,6 +297,7 @@
     <div class="prep reveal">
       <span>👕 動きやすい服装</span><span>🧴 タオル</span><span>🥤 飲み物</span>
     </div>
+    <div class="note reveal">📅 お休みしても<strong>振替が取りやすい</strong>から、お仕事やご家庭の予定で忙しい方も、無理なく続けられます。</div>
   </div>
 </section>
 
@@ -314,6 +332,53 @@
         </ul>
         <a class="btn pink" href="https://www.instagram.com/sowersnohito/" target="_blank" rel="noopener">📷 Instagramをフォロー</a>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- CLASSROOMS -->
+<section id="classrooms">
+  <div class="wrap center">
+    <span class="tag orange">教室一覧</span>
+    <h2 class="sec-title">徳島県内の教室</h2>
+    <p class="sec-lead">お近くの教室をお選びいただけます。空き状況・無料体験はLINEでお気軽にお問い合わせください。</p>
+  </div>
+  <div class="wrap rooms">
+    <div class="room reveal">
+      <span class="area">論田（本部）</span>
+      <div class="rname">論田B&G武道館</div>
+      <div class="meta"><b>土曜日</b></div>
+      <div class="times"><span>A 10:30-11:30</span><span>B 11:45-12:45</span><span>C 13:00-14:00</span><span>AC 14:15-15:30</span></div>
+    </div>
+    <div class="room reveal">
+      <span class="area">北島</span>
+      <div class="rname">サンライフ北島</div>
+      <div class="meta"><b>火曜日</b></div>
+      <div class="times"><span>ST 16:00-16:50</span><span>A 17:00-18:00</span><span>B 18:10-19:10</span></div>
+    </div>
+    <div class="room reveal">
+      <span class="area">阿南</span>
+      <div class="rname">阿南B&G</div>
+      <div class="meta"><b>水曜日</b></div>
+      <div class="times"><span>ST 16:00-16:50</span><span>A 17:00-18:00</span><span>B 18:10-19:10</span></div>
+    </div>
+    <div class="room reveal">
+      <span class="area">吉野川</span>
+      <div class="rname">吉野川市交流センター</div>
+      <div class="meta"><b>金曜日</b></div>
+      <div class="times"><span>ST 16:00-16:50</span><span>A 17:00-18:00</span><span>B 18:10-19:10</span></div>
+    </div>
+    <div class="room reveal">
+      <span class="area">小松島</span>
+      <div class="rname">小松島市立体育館 武道館</div>
+      <div class="meta"><b>木曜日</b>（月3回）</div>
+      <div class="times"><span>ジュニア 19:00-20:00</span><span>バク転集中 20:00-21:00</span></div>
+    </div>
+    <div class="room reveal">
+      <span class="area">上板</span>
+      <div class="rname">東光小学校 体育館</div>
+      <div class="meta"><b>日曜日</b>（月3回）</div>
+      <div class="times"><span>A 10:20-11:20</span><span>B 11:30-12:30</span><span>バク転集中 13:00-14:00</span></div>
     </div>
   </div>
 </section>
