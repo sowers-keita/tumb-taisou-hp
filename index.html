@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>徳島タンブ体操教室｜幼稚園・小学生のエアトラック体操</title>
+<meta name="description" content="徳島県庁から車で10分。エアトラックマットを使った幼稚園・小学生向けの体操教室。小松島・八万・論田・津田・藍住エリア。初心者・運動が苦手なお子さんも大歓迎。無料体験受付中！" />
+<meta property="og:title" content="徳島タンブ体操教室" />
+<meta property="og:description" content="エアトラックマットで安全に楽しく。幼稚園・小学生向けの体操教室。無料体験受付中！" />
+<meta property="og:image" content="https://cdn.peraichi.com/userData/5b3e181c-c4bc-4b30-8f41-0f8f0a00002b/img/63e9cce0d6e86/original.jpeg" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;700;800&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --green:#2fb86b; --green-d:#1f9a57;
+    --pink:#ff5fa2; --pink-d:#ef3d8c;
+    --orange:#ff9f1c; --orange-d:#f7861a;
+    --ink:#26313a; --muted:#6b7785;
+    --bg:#fffdf8; --card:#ffffff;
+    --ring:0 10px 30px rgba(38,49,58,.08);
+    --round:22px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:"Noto Sans JP",system-ui,sans-serif;
+    color:var(--ink); background:var(--bg);
+    line-height:1.8; -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  h1,h2,h3,.rounded{font-family:"M PLUS Rounded 1c","Noto Sans JP",sans-serif;}
+  a{color:inherit;text-decoration:none}
+  img{max-width:100%;display:block}
+  .wrap{width:min(1080px,92%);margin-inline:auto}
+  section{padding:64px 0}
+  .tag{display:inline-block;font-weight:700;font-size:.82rem;letter-spacing:.08em;
+    padding:6px 16px;border-radius:999px;color:#fff}
+  .tag.green{background:var(--green)} .tag.pink{background:var(--pink)} .tag.orange{background:var(--orange)}
+  .sec-title{font-size:clamp(1.5rem,5vw,2.1rem);font-weight:800;line-height:1.35;margin:14px 0 8px}
+  .sec-lead{color:var(--muted);font-size:1rem;margin-bottom:30px}
+  .center{text-align:center}
+
+  /* buttons */
+  .btn{display:inline-flex;align-items:center;gap:8px;font-family:"M PLUS Rounded 1c",sans-serif;
+    font-weight:700;font-size:1.02rem;padding:15px 28px;border-radius:999px;color:#fff;
+    box-shadow:0 8px 22px rgba(47,184,107,.35);transition:transform .15s ease, box-shadow .15s ease}
+  .btn:active{transform:translateY(1px)}
+  .btn.line{background:linear-gradient(120deg,var(--green),#3fd07d);box-shadow:0 10px 24px rgba(47,184,107,.4)}
+  .btn.pink{background:linear-gradient(120deg,var(--pink),#ff86bb);box-shadow:0 10px 24px rgba(255,95,162,.38)}
+  .btn.orange{background:linear-gradient(120deg,var(--orange),#ffb84d);box-shadow:0 10px 24px rgba(255,159,28,.38)}
+  .btn:hover{transform:translateY(-2px)}
+  .btn.ghost{background:#fff;color:var(--green-d);border:2px solid var(--green);box-shadow:none}
+
+  /* header */
+  header{position:sticky;top:0;z-index:50;background:rgba(255,253,248,.85);
+    backdrop-filter:saturate(140%) blur(10px);border-bottom:1px solid rgba(38,49,58,.06)}
+  .nav{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+  .brand{display:flex;align-items:center;gap:10px;font-family:"M PLUS Rounded 1c";font-weight:800;font-size:1.12rem}
+  .logo{width:38px;height:38px;border-radius:12px;display:grid;place-items:center;color:#fff;font-size:1.2rem;
+    background:linear-gradient(135deg,var(--green),var(--pink) 55%,var(--orange));box-shadow:var(--ring)}
+  .nav-links{display:flex;gap:22px;align-items:center}
+  .nav-links a{font-weight:500;color:var(--muted);font-size:.95rem}
+  .nav-links a:hover{color:var(--ink)}
+  .nav .btn{padding:10px 18px;font-size:.9rem;box-shadow:0 6px 16px rgba(47,184,107,.3)}
+  @media(max-width:820px){.nav-links a:not(.btn){display:none}}
+
+  /* hero */
+  .hero{position:relative;padding:70px 0 80px;overflow:hidden}
+  .hero .wrap{position:relative;z-index:2}
+  .blob{position:absolute;border-radius:50%;filter:blur(8px);opacity:.55;z-index:0}
+  .b1{width:340px;height:340px;background:radial-gradient(circle at 30% 30%,#ffd6e8,#ff9ec5);top:-80px;right:-60px}
+  .b2{width:300px;height:300px;background:radial-gradient(circle at 30% 30%,#c8f5dc,#7fe0a8);bottom:-90px;left:-70px}
+  .b3{width:220px;height:220px;background:radial-gradient(circle at 30% 30%,#ffe6bf,#ffc266);top:120px;left:42%}
+  .hero h1{font-size:clamp(2rem,7.5vw,3.4rem);font-weight:800;line-height:1.25}
+  .hero h1 .hl{background:linear-gradient(transparent 60%,#ffe08a 60%);padding:0 4px}
+  .hero .sub{margin:18px 0 8px;font-size:1.05rem;color:var(--ink)}
+  .pills{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0 28px}
+  .pill{background:#fff;border-radius:999px;padding:9px 16px;font-weight:700;font-size:.9rem;
+    box-shadow:var(--ring);display:flex;align-items:center;gap:7px}
+  .pill .e{font-size:1.05rem}
+  .cta-row{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+  .hero-card{margin-top:40px;border-radius:28px;overflow:hidden;box-shadow:0 24px 60px rgba(38,49,58,.16);
+    aspect-ratio:16/9;background:linear-gradient(135deg,#c8f5dc,#ffd6e8 50%,#ffe6bf)}
+  .hero-card img{width:100%;height:100%;object-fit:cover}
+
+  /* generic media card */
+  .grid{display:grid;gap:22px}
+  .g3{grid-template-columns:repeat(3,1fr)}
+  .g2{grid-template-columns:repeat(2,1fr)}
+  @media(max-width:860px){.g3{grid-template-columns:1fr}.g2{grid-template-columns:1fr}}
+  .card{background:var(--card);border-radius:var(--round);box-shadow:var(--ring);overflow:hidden}
+  .card .ph{aspect-ratio:4/3;background:linear-gradient(135deg,#e9fbf0,#ffe9f3);overflow:hidden}
+  .card .ph img{width:100%;height:100%;object-fit:cover}
+  .card .body{padding:22px 22px 26px}
+  .card h3{font-size:1.18rem;font-weight:800;margin-bottom:8px}
+  .card p{color:var(--muted);font-size:.96rem}
+  .top-line{height:6px}
+  .tl-green{background:var(--green)} .tl-pink{background:var(--pink)} .tl-orange{background:var(--orange)}
+
+  /* feature numbered */
+  .feat{display:flex;gap:18px;align-items:flex-start;background:#fff;border-radius:var(--round);
+    padding:24px;box-shadow:var(--ring)}
+  .feat .num{flex:none;width:54px;height:54px;border-radius:16px;display:grid;place-items:center;
+    color:#fff;font-family:"M PLUS Rounded 1c";font-weight:800;font-size:1.5rem}
+  .n-green{background:linear-gradient(135deg,var(--green),#52d68c)}
+  .n-pink{background:linear-gradient(135deg,var(--pink),#ff8cc0)}
+  .n-orange{background:linear-gradient(135deg,var(--orange),#ffc163)}
+  .feat h3{font-size:1.14rem;margin-bottom:6px}
+  .feat p{color:var(--muted);font-size:.95rem}
+
+  /* about band */
+  .band{background:linear-gradient(135deg,#effbf3,#fff0f7 55%,#fff6e9)}
+
+  /* video */
+  .video{position:relative;aspect-ratio:16/9;border-radius:18px;overflow:hidden;box-shadow:var(--ring);background:#000}
+  .video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+
+  /* schedule */
+  .sched{background:#fff;border-radius:var(--round);box-shadow:var(--ring);overflow:hidden}
+  .sched .head{padding:20px 24px;color:#fff;font-family:"M PLUS Rounded 1c";font-weight:800;font-size:1.15rem;
+    background:linear-gradient(120deg,var(--green),var(--orange))}
+  .row{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:16px 24px;border-bottom:1px dashed #eef0ee}
+  .row:last-child{border-bottom:0}
+  .row .cls{font-weight:700}
+  .row .time{color:var(--muted)}
+  .seat{flex:none;font-size:.8rem;font-weight:700;color:#fff;background:var(--pink);padding:4px 12px;border-radius:999px}
+  .prep{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+  .prep span{background:#fff;border:2px solid #f0e6d8;border-radius:999px;padding:8px 16px;font-weight:700;font-size:.9rem}
+
+  /* instructor */
+  .inst{display:grid;grid-template-columns:280px 1fr;gap:28px;align-items:center;
+    background:#fff;border-radius:28px;box-shadow:var(--ring);overflow:hidden}
+  .inst .pic{aspect-ratio:1;background:linear-gradient(135deg,#c8f5dc,#ffd6e8);height:100%}
+  .inst .pic img{width:100%;height:100%;object-fit:cover}
+  .inst .info{padding:28px 30px}
+  .inst h3{font-size:1.5rem}
+  .inst .role{color:var(--green-d);font-weight:700;margin-bottom:10px}
+  .inst ul{list-style:none;color:var(--muted);font-size:.95rem;margin:0 0 16px}
+  .inst li{padding-left:22px;position:relative}
+  .inst li::before{content:"🤸";position:absolute;left:0}
+  @media(max-width:740px){.inst{grid-template-columns:1fr}.inst .pic{aspect-ratio:16/10}}
+
+  /* map */
+  .map{aspect-ratio:16/9;border-radius:18px;overflow:hidden;box-shadow:var(--ring);border:0}
+  .map iframe{width:100%;height:100%;border:0;display:block}
+
+  /* CTA band */
+  .cta{background:linear-gradient(120deg,var(--green),var(--pink) 55%,var(--orange));color:#fff;border-radius:30px;
+    padding:48px 28px;text-align:center;box-shadow:0 24px 60px rgba(255,95,162,.28)}
+  .cta h2{font-size:clamp(1.6rem,5.5vw,2.3rem);font-weight:800;margin-bottom:10px}
+  .cta p{opacity:.95;margin-bottom:24px}
+  .cta .btn{background:#fff;color:var(--green-d);box-shadow:0 10px 24px rgba(0,0,0,.15)}
+  .cta .btn.alt{background:rgba(255,255,255,.16);color:#fff;border:2px solid rgba(255,255,255,.6)}
+
+  /* related */
+  .rel .ph{aspect-ratio:16/9}
+  .rel .body .btn{margin-top:14px;font-size:.92rem;padding:11px 20px}
+
+  /* footer */
+  footer{background:#26313a;color:#cdd6df;padding:46px 0 30px;margin-top:20px}
+  footer .grid-f{display:flex;flex-wrap:wrap;gap:26px;justify-content:space-between;align-items:flex-start}
+  footer .brand{color:#fff}
+  footer a{color:#cdd6df}
+  footer a:hover{color:#fff}
+  .fcontact{font-size:.95rem;line-height:2}
+  .copy{margin-top:26px;font-size:.82rem;color:#8794a1;border-top:1px solid #3a4651;padding-top:16px}
+
+  .reveal{opacity:0;transform:translateY(24px);transition:opacity .6s ease, transform .6s ease}
+  .reveal.in{opacity:1;transform:none}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <div class="brand"><span class="logo">🤸</span>徳島タンブ体操教室</div>
+    <nav class="nav-links">
+      <a href="#about">教室について</a>
+      <a href="#theme">3つのテーマ</a>
+      <a href="#schedule">教室案内</a>
+      <a href="#access">アクセス</a>
+      <a class="btn line" href="https://lin.ee/Q6KsIKI" target="_blank" rel="noopener">無料体験</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <span class="blob b1"></span><span class="blob b2"></span><span class="blob b3"></span>
+  <div class="wrap">
+    <span class="tag pink">幼稚園・小学生のための体操教室</span>
+    <h1>できた！が増える、<br><span class="hl">エアトラック体操</span>。</h1>
+    <p class="sub">「何か運動を始めさせたい」「体の使い方を知ってほしい」「好きなスポーツを見つけてあげたい」<br>そんな保護者の方にぴったりの教室です。初心者・運動が苦手なお子さんも大歓迎！</p>
+    <div class="pills">
+      <span class="pill"><span class="e">🛟</span>頭を打っても痛くない安全マット</span>
+      <span class="pill"><span class="e">🧑‍🏫</span>指導者3名・エアマット4枚</span>
+      <span class="pill"><span class="e">🏟️</span>バスケコートより広い体育館</span>
+    </div>
+    <div class="cta-row">
+      <a class="btn line" href="https://lin.ee/Q6KsIKI" target="_blank" rel="noopener">📱 無料体験を申し込む</a>
+      <a class="btn ghost" href="#about">教室について見る</a>
+    </div>
+    <div class="hero-card">
+      <img loading="lazy" src="https://cdn.peraichi.com/userData/5b3e181c-c4bc-4b30-8f41-0f8f0a00002b/img/63e9cce0d6e86/original.jpeg" alt="徳島タンブ体操教室の練習風景">
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="band">
+  <div class="wrap">
+    <div class="grid g2" style="align-items:center">
+      <div class="reveal">
+        <span class="tag green">タンブ体操教室とは？</span>
+        <h2 class="sec-title">徳島では珍しい<br>エアトラックマットの体操教室</h2>
+        <p style="color:var(--muted)">満3歳〜12歳のキッズ向け。エアトラックマットは空気を入れた弾力のあるマットで、マット＋トランポリンをイメージするとわかりやすいです。通常より小さな力で高く跳べるので、まだ筋肉が少ないお子さんでもアクロバット技に挑戦できます。頭を打っても痛くないので、安全に練習していただけます。</p>
+        <p style="color:var(--muted);margin-top:14px">「タンブ」は前回り・後ろ回り・バク転などの体操技の総称「タンブリング」から。子どもたちがタンブリングを好きになるよう願って名付けました。</p>
+      </div>
+      <div class="card reveal">
+        <div class="ph"><img loading="lazy" src="https://cdn.peraichi.com/userData/5b3e181c-c4bc-4b30-8f41-0f8f0a00002b/img/606c0ccf9f190/original.jpeg" alt="エアトラックマット"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- THEME -->
+<section id="theme">
+  <div class="wrap center">
+    <span class="tag orange">3つのテーマ</span>
+    <h2 class="sec-title">タンブ体操教室が大切にしていること</h2>
+    <p class="sec-lead">「できた！」の喜びから、生涯スポーツの入り口へ。</p>
+  </div>
+  <div class="wrap grid g3">
+    <div class="feat reveal"><div class="num n-green">1</div><div><h3>できないことが、できる喜び</h3><p>練習すれば必ずできるようになると知ってもらいます。体操は上達が目に見えてわかりやすく、子どもが自分から主体的に練習するように。指導者3名・エアマット4枚で、思う存分技を練習できます。</p></div></div>
+    <div class="feat reveal"><div class="num n-pink">2</div><div><h3>体幹を鍛え、体の使い方を知る</h3><p>毎回いろいろなジャンプや体幹運動を実施。エアトランポリンは通常の約2倍跳べるので、楽しみながら体幹を鍛えられます。その楽しさはぜひ一度体験してみてください！</p></div></div>
+    <div class="feat reveal"><div class="num n-orange">3</div><div><h3>好きで得意なスポーツを見つける</h3><p>小学生は関連クラブ「sowers sports club」に優先入会できます。9種類のスポーツを体験でき、好きで得意なスポーツがきっと見つかります。体操で体の使い方を知り、生涯スポーツを楽しめる生徒を目指します。</p></div></div>
+  </div>
+</section>
+
+<!-- FACILITY -->
+<section class="band">
+  <div class="wrap center">
+    <span class="tag green">教室のご案内</span>
+    <h2 class="sec-title">のびのび動ける環境</h2>
+  </div>
+  <div class="wrap grid g2">
+    <div class="card reveal"><div class="top-line tl-pink"></div><div class="ph"><img loading="lazy" src="https://cdn.peraichi.com/userData/5b3e181c-c4bc-4b30-8f41-0f8f0a00002b/img/5c20312784f17/original.jpeg" alt="広い体育館"></div><div class="body"><h3>🏃 いっぱい走れる！広い体育館</h3><p>バスケットコートより大きい体育館で練習。力が有り余るお子さんも力いっぱい走り回れます。練習の合間には鬼ごっこで楽しく体を温めています。</p></div></div>
+    <div class="card reveal"><div class="top-line tl-orange"></div><div class="ph"><img loading="lazy" src="https://cdn.peraichi.com/userData/5b3e181c-c4bc-4b30-8f41-0f8f0a00002b/img/5c18cb90a1b14/original.jpeg" alt="アクセスの良い立地"></div><div class="body"><h3>🚗 保護者も嬉しいアクセス</h3><p>徳島県庁から南へ10分、徳島市論田町のB&G体育館。近くにマルナカ新浜店があり練習中にお買い物も。プールも隣接し夏は水遊びもできます。</p></div></div>
+  </div>
+</section>
+
+<!-- VIDEOS -->
+<section>
+  <div class="wrap center">
+    <span class="tag pink">動画で見る</span>
+    <h2 class="sec-title">練習風景・メディア紹介</h2>
+    <p class="sec-lead">阿南の教室がケーブルテレビで取り上げられました！</p>
+  </div>
+  <div class="wrap grid g2">
+    <div class="reveal"><div class="video"><iframe loading="lazy" src="https://www.youtube.com/embed/kCZHNDlj78k" title="ケーブルテレビ紹介" allowfullscreen></iframe></div></div>
+    <div class="reveal"><div class="video"><iframe loading="lazy" src="https://www.youtube.com/embed/gd8B2oi2pkc" title="練習風景" allowfullscreen></iframe></div></div>
+  </div>
+</section>
+
+<!-- SCHEDULE -->
+<section id="schedule" class="band">
+  <div class="wrap center">
+    <span class="tag orange">教室案内</span>
+    <h2 class="sec-title">クラス・練習日時</h2>
+    <p class="sec-lead">土曜日クラス（月4回レッスン）／満5歳以上のお子様対象</p>
+  </div>
+  <div class="wrap" style="max-width:680px">
+    <div class="sched reveal">
+      <div class="head">🗓️ 土曜日クラス</div>
+      <div class="row"><div><div class="cls">ジュニアA クラス</div><div class="time">10:30 〜 11:30</div></div><span class="seat">残り1組</span></div>
+      <div class="row"><div><div class="cls">ジュニアB クラス</div><div class="time">11:45 〜 12:45</div></div><span class="seat">残り2組</span></div>
+      <div class="row"><div><div class="cls">ジュニアC クラス</div><div class="time">13:00 〜 14:00</div></div><span class="seat">残り1組</span></div>
+    </div>
+    <div class="prep reveal">
+      <span>👕 動きやすい服装</span><span>🧴 タオル</span><span>🥤 飲み物</span>
+    </div>
+  </div>
+</section>
+
+<!-- ACCESS -->
+<section id="access">
+  <div class="wrap center">
+    <span class="tag green">練習場所</span>
+    <h2 class="sec-title">徳島市B&G武道館</h2>
+    <p class="sec-lead">徳島市論田町中開47-2</p>
+  </div>
+  <div class="wrap reveal">
+    <div class="map"><iframe loading="lazy" src="https://www.google.com/maps?q=徳島市論田町中開47-2&output=embed" allowfullscreen></iframe></div>
+  </div>
+</section>
+
+<!-- INSTRUCTOR -->
+<section class="band">
+  <div class="wrap center">
+    <span class="tag pink">指導者紹介</span>
+    <h2 class="sec-title">講師：keita</h2>
+  </div>
+  <div class="wrap">
+    <div class="inst reveal">
+      <div class="pic"><img loading="lazy" src="https://cdn.peraichi.com/userData/5b3e181c-c4bc-4b30-8f41-0f8f0a00002b/img/629f77e16bb1e/original.jpeg" alt="指導者 keita"></div>
+      <div class="info">
+        <h3>keita</h3>
+        <div class="role">アクロバット講師</div>
+        <ul>
+          <li>高校時代に男子新体操部に所属、全国国民体育大会にて団体入賞</li>
+          <li>現在は小松島高校OBチームに所属</li>
+          <li>徳島ヴォルティス専属チアダンサーチーム「BLUE SPIRIT」</li>
+        </ul>
+        <a class="btn pink" href="https://www.instagram.com/sowersnohito/" target="_blank" rel="noopener">📷 Instagramをフォロー</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section>
+  <div class="wrap">
+    <div class="cta reveal">
+      <h2>まずは無料体験から！</h2>
+      <p>初心者・運動が苦手なお子さんも大歓迎。お気軽にお問い合わせください。</p>
+      <div class="cta-row" style="justify-content:center">
+        <a class="btn" href="https://lin.ee/Q6KsIKI" target="_blank" rel="noopener">📱 LINEで無料体験を申し込む</a>
+        <a class="btn alt" href="mailto:k.k_1012@me.com">✉️ メールで問い合わせる</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RELATED -->
+<section class="band">
+  <div class="wrap center">
+    <span class="tag orange">他の教室のご紹介</span>
+    <h2 class="sec-title">関連クラブ</h2>
+  </div>
+  <div class="wrap grid g2 rel">
+    <div class="card reveal"><div class="top-line tl-green"></div><div class="ph"><img loading="lazy" src="https://cdn.peraichi.com/userData/5b3e181c-c4bc-4b30-8f41-0f8f0a00002b/img/5e0e7240b96cc/original.jpeg" alt="sowers sports club"></div><div class="body"><h3>sowers sports club</h3><p>様々なスポーツを通して「好き」と「得意」を見つけるお手伝い。月額980円で9種類のスポーツが体験できます！</p><a class="btn green" href="https://peraichi.com/landing_pages/view/sowerssports" target="_blank" rel="noopener">sowers HPへ →</a></div></div>
+    <div class="card reveal"><div class="top-line tl-pink"></div><div class="ph"><img loading="lazy" src="https://cdn.peraichi.com/userData/5b3e181c-c4bc-4b30-8f41-0f8f0a00002b/img/61c1683c72b13/original.JPG" alt="大人のバク転教室"></div><div class="body"><h3>【徳島】大人のバク転教室</h3><p>当教室の指導者が講師を務める大人のためのバク転教室。1回¥500・会員登録不要、予定が合う時だけ参加OK！</p><a class="btn pink" href="https://sowers.hp.peraichi.com/circle/" target="_blank" rel="noopener">バク転教室HPへ →</a></div></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap grid-f">
+    <div>
+      <div class="brand" style="display:flex;align-items:center;gap:10px;font-family:'M PLUS Rounded 1c';font-weight:800;font-size:1.15rem">
+        <span class="logo">🤸</span>徳島タンブ体操教室
+      </div>
+      <p style="margin-top:12px;max-width:360px;color:#aeb8c2;font-size:.92rem">幼稚園・小学生のためのエアトラック体操教室。小松島・八万・論田・津田・藍住・川内エリア。</p>
+    </div>
+    <div class="fcontact">
+      <strong style="color:#fff">お問い合わせ</strong><br>
+      <a href="https://lin.ee/Q6KsIKI" target="_blank" rel="noopener">📱 LINEで無料体験</a><br>
+      <a href="mailto:k.k_1012@me.com">✉️ k.k_1012@me.com</a><br>
+      <a href="https://www.instagram.com/sowersnohito/" target="_blank" rel="noopener">📷 Instagram</a>
+    </div>
+  </div>
+  <div class="wrap copy">© 2018–2026 徳島タンブ体操教室</div>
+</footer>
+
+<script>
+  const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
