@@ -188,6 +188,27 @@
   .map{aspect-ratio:16/9;border-radius:18px;overflow:hidden;box-shadow:var(--ring);border:0}
   .map iframe{width:100%;height:100%;border:0;display:block}
 
+  /* FAQ（よくある質問・アコーディオン） */
+  .faq-wrap{max-width:760px;margin-inline:auto;display:flex;flex-direction:column;gap:14px}
+  .faq-item{background:#fff;border-radius:var(--round);box-shadow:var(--ring);overflow:hidden;border-top:6px solid var(--green)}
+  .faq-item:nth-child(3n+2){border-top-color:var(--pink)}
+  .faq-item:nth-child(3n){border-top-color:var(--orange)}
+  .faq-item summary{list-style:none;cursor:pointer;padding:20px 58px 20px 22px;
+    font-family:"M PLUS Rounded 1c","Noto Sans JP",sans-serif;font-weight:800;font-size:1.02rem;
+    color:var(--ink);position:relative;line-height:1.55}
+  .faq-item summary::-webkit-details-marker{display:none}
+  .faq-item summary .qmark{color:var(--green-d);margin-right:6px}
+  .faq-item summary::after{content:"+";position:absolute;right:18px;top:50%;transform:translateY(-50%);
+    width:30px;height:30px;border-radius:50%;background:#eefaf2;color:var(--green-d);display:grid;place-items:center;
+    font-size:1.5rem;font-weight:800;transition:background .2s, color .2s}
+  .faq-item[open] summary::after{content:"–";background:#ffe7f1;color:var(--pink-d)}
+  .faq-item summary:hover{color:var(--green-d)}
+  .faq-a{padding:2px 22px 22px;color:var(--muted);font-size:.96rem;line-height:1.9}
+  .faq-a b{color:var(--ink)}
+  .faq-a ul{margin:10px 0 0;padding-left:1.2em}
+  .faq-a li{margin:2px 0}
+  .faq-foot{text-align:center;margin-top:24px;color:var(--muted);font-weight:700;font-size:.95rem}
+
   /* CTA band */
   .cta{background:linear-gradient(120deg,var(--green),var(--pink) 55%,var(--orange));color:#fff;border-radius:30px;
     padding:48px 28px;text-align:center;box-shadow:0 24px 60px rgba(255,95,162,.28)}
@@ -223,6 +244,7 @@
       <a href="#theme">3つのテーマ</a>
       <a href="#schedule">教室案内</a>
       <a href="#access">アクセス</a>
+      <a href="#faq">よくある質問</a>
       <a class="btn line" href="https://lin.ee/Q6KsIKI" target="_blank" rel="noopener">無料体験</a>
     </nav>
   </div>
@@ -418,6 +440,98 @@
   </div>
   <div class="wrap">
     <div class="note reveal" style="border-left-color:var(--pink)">🔄 <strong>どの教室でも振替OK！</strong> お休みしても、他の曜日・他の教室のクラスに振り替えられます。お仕事やご家庭の予定で忙しい方も無理なく続けられます。</div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="band">
+  <div class="wrap center">
+    <span class="tag green">よくある質問</span>
+    <h2 class="sec-title">よくある質問</h2>
+    <p class="sec-lead">気になる項目をタップすると、答えがひらきます。</p>
+  </div>
+  <div class="wrap">
+    <div class="faq-wrap reveal">
+
+      <details class="faq-item">
+        <summary><span class="qmark">Q.</span>体操が初めてでも大丈夫ですか？</summary>
+        <div class="faq-a"><b>はい、大丈夫です。</b> 徳島タンブ体操教室では、体操が初めてのお子さまでも楽しく参加できるように、基礎からゆっくり進めていきます。エアトランポリンやマットを使いながら、まずは「体を動かす楽しさ」や「空中で体を動かす感覚」を楽しく身につけていきます。</div>
+      </details>
+
+      <details class="faq-item">
+        <summary><span class="qmark">Q.</span>何歳から参加できますか？</summary>
+        <div class="faq-a"><b>5歳からご参加いただけます。</b> 年齢や運動経験に合わせて、無理なく参加できるクラスをご案内いたします。初めてのお子さまも、まずはお気軽にLINEにてご相談ください。</div>
+      </details>
+
+      <details class="faq-item">
+        <summary><span class="qmark">Q.</span>運動が苦手でも参加できますか？</summary>
+        <div class="faq-a"><b>はい、もちろん参加できます。</b> 体操教室は、運動が得意なお子さまだけの場所ではありません。エアトランポリンやマットを使って、跳ぶ・転がる・支える・バランスをとるなど、いろいろな動きを楽しみながら、少しずつ体の使い方を身につけていきます。</div>
+      </details>
+
+      <details class="faq-item">
+        <summary><span class="qmark">Q.</span>人見知りの子でも大丈夫ですか？</summary>
+        <div class="faq-a"><b>大丈夫です。</b> 最初は緊張してしまうお子さまも多いですが、先生やお友だちと一緒に少しずつ慣れていけるようサポートします。無理に参加を促すのではなく、お子さまのペースを大切にしながら進めていきます。</div>
+      </details>
+
+      <details class="faq-item">
+        <summary><span class="qmark">Q.</span>男の子でも女の子でも参加できますか？</summary>
+        <div class="faq-a"><b>はい、男の子も女の子も参加できます。</b> 体操は、柔軟性・バランス感覚・筋力・リズム感など、さまざまな運動能力を育てられる習い事です。性別に関係なく、楽しく体を動かしたいお子さまにおすすめです。</div>
+      </details>
+
+      <details class="faq-item">
+        <summary><span class="qmark">Q.</span>体験レッスンはできますか？</summary>
+        <div class="faq-a"><b>はい、体験レッスンを受け付けています。</b> 初めての場所や雰囲気に緊張して、最初は見学だけになってしまうお子さまもいらっしゃいます。その場合も無理に参加しなくて大丈夫です。お子さまのペースに合わせて、安心してお越しください。</div>
+      </details>
+
+      <details class="faq-item">
+        <summary><span class="qmark">Q.</span>体験の時は何を持っていけばいいですか？</summary>
+        <div class="faq-a"><b>動きやすい服装、飲み物、タオルをお持ちください。</b> 服装は、Tシャツ・短パン・ジャージなど、動きやすいもので大丈夫です。</div>
+      </details>
+
+      <details class="faq-item">
+        <summary><span class="qmark">Q.</span>保護者はレッスンを見学できますか？</summary>
+        <div class="faq-a"><b>はい、見学できます。</b> お子さまの様子を見ながら、安心して体験・ご入会をご検討いただけます。ただし、会場の状況によっては見学スペースに限りがある場合があります。</div>
+      </details>
+
+      <details class="faq-item">
+        <summary><span class="qmark">Q.</span>どんな内容をしますか？</summary>
+        <div class="faq-a"><b>エアトランポリンやマットを使って、体を動かす楽しさを大切にしながらレッスンを行います。</b> 前転・後転・側転・倒立・ブリッジなどの基本的な技から、バク転などのアクロバット系の技にも段階的に挑戦していきます。また、3ヶ月ごとに練習内容や挑戦する技を変更していくため、飽きずに楽しくステップアップしていけます。</div>
+      </details>
+
+      <details class="faq-item">
+        <summary><span class="qmark">Q.</span>バク転も習えますか？</summary>
+        <div class="faq-a"><b>はい、クラスやレベルに応じてバク転にも挑戦できます。</b> トランポリンやマットを使いながら、安全面に配慮して段階的に練習していきます。いきなり難しい技を行うのではなく、ジャンプ・倒立・補助練習などを通して、無理なくステップアップしていきます。</div>
+      </details>
+
+      <details class="faq-item">
+        <summary><span class="qmark">Q.</span>休んだ場合の振替はありますか？</summary>
+        <div class="faq-a"><b>はい、振替可能です。</b> お休みされた場合は、他のクラスへ参加していただくこともできます。ご都合に合わせて、無理なく通っていただけるように対応しています。</div>
+      </details>
+
+      <details class="faq-item">
+        <summary><span class="qmark">Q.</span>きょうだいで参加できますか？</summary>
+        <div class="faq-a"><b>はい、きょうだいでの参加も可能です。</b> 年齢やレベルが違う場合でも、それぞれに合ったクラスをご案内いたします。まずはお気軽にご相談ください。</div>
+      </details>
+
+      <details class="faq-item">
+        <summary><span class="qmark">Q.</span>体が硬くても大丈夫ですか？</summary>
+        <div class="faq-a"><b>大丈夫です。</b> 最初から柔らかい必要はありません。レッスンの中で少しずつ柔軟や体の使い方を練習していくので、無理なく成長していけます。</div>
+      </details>
+
+      <details class="faq-item">
+        <summary><span class="qmark">Q.</span>申し込みや体験予約はどうすればいいですか？</summary>
+        <div class="faq-a"><b>LINEよりお気軽にお問い合わせください。</b> 体験をご希望の場合は、以下の内容を送っていただけるとスムーズです。
+          <ul>
+            <li>お子さまのお名前</li>
+            <li>年齢／学年</li>
+            <li>体験希望の教室</li>
+            <li>体操経験の有無</li>
+          </ul>
+        </div>
+      </details>
+
+    </div>
+    <p class="faq-foot">ほかにも気になることがあれば、お気軽にLINEでご相談ください 😊</p>
   </div>
 </section>
 
