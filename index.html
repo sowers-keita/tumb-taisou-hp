@@ -3,11 +3,15 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" type="image/png" href="logo.png" />
+<link rel="apple-touch-icon" href="logo.png" />
 <title>徳島タンブ体操教室｜幼稚園・小学生のエアトラック体操</title>
 <meta name="description" content="徳島県庁から車で10分。エアトラックマットを使った幼稚園・小学生向けの体操教室。小松島・八万・論田・津田・藍住エリア。初心者・運動が苦手なお子さんも大歓迎。無料体験受付中！" />
 <meta property="og:title" content="徳島タンブ体操教室" />
 <meta property="og:description" content="エアトラックマットで安全に楽しく。幼稚園・小学生向けの体操教室。無料体験受付中！" />
-<meta property="og:image" content="https://cdn.peraichi.com/userData/5b3e181c-c4bc-4b30-8f41-0f8f0a00002b/img/63e9cce0d6e86/original.jpeg" />
+<meta property="og:image" content="https://tumb-taisou-hp.vercel.app/ogp.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://tumb-taisou-hp.vercel.app/ogp.jpg" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;700;800&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
@@ -57,8 +61,9 @@
     backdrop-filter:saturate(140%) blur(10px);border-bottom:1px solid rgba(38,49,58,.06)}
   .nav{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
   .brand{display:flex;align-items:center;gap:10px;font-family:"M PLUS Rounded 1c";font-weight:800;font-size:1.12rem}
-  .logo{width:38px;height:38px;border-radius:12px;display:grid;place-items:center;color:#fff;font-size:1.2rem;
-    background:linear-gradient(135deg,var(--green),var(--pink) 55%,var(--orange));box-shadow:var(--ring)}
+  .logo{width:42px;height:42px;border-radius:0;object-fit:contain;display:block;flex:0 0 auto;background:none;box-shadow:none}
+  .hero-logo{width:clamp(92px,17vw,148px);height:auto;display:block;margin:0 0 16px}
+  @media(max-width:760px){.hero-logo{margin-left:auto;margin-right:auto}}
   .nav-links{display:flex;gap:22px;align-items:center}
   .nav-links a{font-weight:500;color:var(--muted);font-size:.95rem}
   .nav-links a:hover{color:var(--ink)}
@@ -238,7 +243,7 @@
 
 <header>
   <div class="wrap nav">
-    <div class="brand"><span class="logo">🤸</span>徳島タンブ体操教室</div>
+    <div class="brand"><img class="logo" src="logo.png" alt="徳島タンブ体操教室のロゴ" width="42" height="42" />徳島タンブ体操教室</div>
     <nav class="nav-links">
       <a href="#about">教室について</a>
       <a href="#theme">3つのテーマ</a>
@@ -256,6 +261,7 @@
   <span class="hdot hd1"></span><span class="hdot hd2"></span><span class="hdot hd3"></span><span class="hdot hd4"></span><span class="hdot hd5"></span>
   <div class="wrap hero-grid">
     <div class="hero-copy">
+      <img class="hero-logo" src="logo.png" alt="徳島タンブ体操教室のロゴ" width="148" height="148" />
       <span class="ribbon">⭐ 運動が好きになる体操教室</span>
       <h1>できた！が増える、<br><span class="brush">徳島タンブ体操教室</span>。</h1>
       <p class="sub">「何か運動を始めさせたい」「体の使い方を知ってほしい」「好きなスポーツを見つけてあげたい」。そんな保護者の方にぴったりの教室です。初心者・運動が苦手なお子さんも大歓迎！</p>
@@ -565,7 +571,7 @@
   <div class="wrap grid-f">
     <div>
       <div class="brand" style="display:flex;align-items:center;gap:10px;font-family:'M PLUS Rounded 1c';font-weight:800;font-size:1.15rem">
-        <span class="logo">🤸</span>徳島タンブ体操教室
+        <img class="logo" src="logo.png" alt="徳島タンブ体操教室のロゴ" width="42" height="42" />徳島タンブ体操教室
       </div>
       <p style="margin-top:12px;max-width:360px;color:#aeb8c2;font-size:.92rem">幼稚園・小学生のためのエアトラック体操教室。小松島・八万・論田・津田・藍住・川内エリア。</p>
     </div>
