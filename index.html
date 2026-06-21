@@ -62,8 +62,10 @@
   .nav{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
   .brand{display:flex;align-items:center;gap:10px;font-family:"M PLUS Rounded 1c";font-weight:800;font-size:1.12rem}
   .logo{width:42px;height:42px;border-radius:0;object-fit:contain;display:block;flex:0 0 auto;background:none;box-shadow:none}
-  .hero-logo{width:clamp(92px,17vw,148px);height:auto;display:block;margin:0 0 16px}
-  @media(max-width:760px){.hero-logo{margin-left:auto;margin-right:auto}}
+  .hero-copy{position:relative;z-index:3}
+  .hero-mark{position:absolute;left:48%;top:48%;transform:translate(-50%,-50%);z-index:-1;
+    width:clamp(360px,50vw,640px);height:auto;opacity:.30;pointer-events:none;user-select:none}
+  @media(max-width:880px){.hero-mark{top:44%;width:112vw;max-width:620px;opacity:.26}}
   .nav-links{display:flex;gap:22px;align-items:center}
   .nav-links a{font-weight:500;color:var(--muted);font-size:.95rem}
   .nav-links a:hover{color:var(--ink)}
@@ -261,7 +263,7 @@
   <span class="hdot hd1"></span><span class="hdot hd2"></span><span class="hdot hd3"></span><span class="hdot hd4"></span><span class="hdot hd5"></span>
   <div class="wrap hero-grid">
     <div class="hero-copy">
-      <img class="hero-logo" src="logo.png" alt="徳島タンブ体操教室のロゴ" width="148" height="148" />
+      <img class="hero-mark" src="logo.png" alt="" aria-hidden="true" />
       <span class="ribbon">⭐ 運動が好きになる体操教室</span>
       <h1>できた！が増える、<br><span class="brush">徳島タンブ体操教室</span>。</h1>
       <p class="sub">「何か運動を始めさせたい」「体の使い方を知ってほしい」「好きなスポーツを見つけてあげたい」。そんな保護者の方にぴったりの教室です。初心者・運動が苦手なお子さんも大歓迎！</p>
