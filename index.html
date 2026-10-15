@@ -1,596 +1,667 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="icon" type="image/png" href="logo.png" />
-<link rel="apple-touch-icon" href="logo.png" />
-<title>徳島タンブ体操教室｜幼稚園・小学生のエアトラック体操</title>
-<meta name="description" content="徳島県庁から車で10分。エアトラックマットを使った幼稚園・小学生向けの体操教室。小松島・八万・論田・津田・藍住エリア。初心者・運動が苦手なお子さんも大歓迎。無料体験受付中！" />
-<meta property="og:title" content="徳島タンブ体操教室" />
-<meta property="og:description" content="エアトラックマットで安全に楽しく。幼稚園・小学生向けの体操教室。無料体験受付中！" />
-<meta property="og:image" content="https://tumb-taisou-hp.vercel.app/ogp.jpg" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://tumb-taisou-hp.vercel.app/ogp.jpg" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>sowers 体操教室｜徳島の子ども体操教室｜エアトランポリンで「できた！」が止まらない</title>
+<meta name="description" content="徳島県内6か所（論田・北島・吉野川・阿南・小松島・上板）で開催する子ども向け体操教室。エアトランポリンで、前転・側転・倒立・バク転まで楽しく安全にステップアップ。どの教室でも振替OK。無料体験は公式LINEから。">
+<meta property="og:title" content="sowers 体操教室｜「できた！」が、止まらない。">
+<meta property="og:description" content="跳んで、回って、夢中になる。徳島県内6教室・どの教室でも振替OK。無料体験受付中。">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://tumb-taisou-hp.vercel.app/ogp.jpg">
+<meta property="og:url" content="https://tumb-taisou-hp.vercel.app/">
+<link rel="canonical" href="https://tumb-taisou-hp.vercel.app/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0e0f0c">
+<link rel="icon" href="logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;700;800&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Dela+Gothic+One&family=Archivo:wght@600;800&family=Zen+Kaku+Gothic+New:wght@400;700;900&display=swap">
+<!--
+  要確認（確定次第差し替え）
+  ・論田／上板のクラス時間（現行HPの表記を掲載中。マスタ上は要確認）
+  ・小松島／上板の月謝、全教室の入会金（ページでは「LINEでご案内」）
+  ・北島・吉野川・小松島・上板の公式LINE（現在は全ボタン 論田の公式LINE lin.ee/Q6KsIKI に誘導）
+  ・映像は2026-07-04のレッスン素材（顔はぼかし処理済み）
+-->
 <style>
-  :root{
-    --green:#2fb86b; --green-d:#1f9a57;
-    --pink:#ff5fa2; --pink-d:#ef3d8c;
-    --orange:#ff9f1c; --orange-d:#f7861a;
-    --ink:#26313a; --muted:#6b7785;
-    --bg:#fffdf8; --card:#ffffff;
-    --ring:0 10px 30px rgba(38,49,58,.08);
-    --round:22px;
-  }
-  *{box-sizing:border-box;margin:0;padding:0}
-  html{scroll-behavior:smooth}
-  body{
-    font-family:"Noto Sans JP",system-ui,sans-serif;
-    color:var(--ink); background:var(--bg);
-    line-height:1.8; -webkit-font-smoothing:antialiased;
-    overflow-x:hidden;
-  }
-  h1,h2,h3,.rounded{font-family:"M PLUS Rounded 1c","Noto Sans JP",sans-serif;}
-  a{color:inherit;text-decoration:none}
-  img{max-width:100%;display:block}
-  .wrap{width:min(1080px,92%);margin-inline:auto}
-  section{padding:64px 0}
-  .tag{display:inline-block;font-weight:700;font-size:.82rem;letter-spacing:.08em;
-    padding:6px 16px;border-radius:999px;color:#fff}
-  .tag.green{background:var(--green)} .tag.pink{background:var(--pink)} .tag.orange{background:var(--orange)}
-  .sec-title{font-size:clamp(1.5rem,5vw,2.1rem);font-weight:800;line-height:1.35;margin:14px 0 8px}
-  .sec-lead{color:var(--muted);font-size:1rem;margin-bottom:30px}
-  .center{text-align:center}
+:root{
+  --ink:#0e0f0c;        /* near-black */
+  --ink-2:#1a1c17;
+  --line:#2c2f27;
+  --paper:#f4f2ec;      /* off-white */
+  --paper-2:#e9e6dd;
+  --paper-ink:#151612;
+  --mute:#a3a79a;
+  --mute-2:#5f6357;
+  --lime:#c8f03c;       /* accent */
+  --lime-ink:#4c7a00;   /* accent on paper (text) */
+  --pink:#f39bc4;       /* from logo */
+  --orange:#f7a43a;     /* from logo */
+  --line-green:#06c755;
+  --f-ja:"Dela Gothic One","Hiragino Sans","Noto Sans JP",sans-serif;
+  --f-latin:"Anton","Archivo","Helvetica Neue",Arial,sans-serif;
+  --f-sub:"Archivo","Helvetica Neue",Arial,sans-serif;
+  --f-body:"Zen Kaku Gothic New","Hiragino Sans","Noto Sans JP",sans-serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--paper-ink);font-family:var(--f-body);font-size:16px;line-height:1.8;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+.page{overflow-x:clip}
+img,video{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--lime);outline-offset:3px;border-radius:6px}
+.wrap{width:min(1180px,100%);margin-inline:auto;padding-inline:20px}
+h1,h2,h3{margin:0;text-wrap:balance;word-break:auto-phrase}
+p{margin:0}
+.eyebrow{font-family:var(--f-body);font-weight:900;letter-spacing:.14em;font-size:13px;color:var(--lime-ink)}
+.dark .eyebrow{color:var(--lime)}
 
-  /* buttons */
-  .btn{display:inline-flex;align-items:center;gap:8px;font-family:"M PLUS Rounded 1c",sans-serif;
-    font-weight:700;font-size:1.02rem;padding:15px 28px;border-radius:999px;color:#fff;
-    box-shadow:0 8px 22px rgba(47,184,107,.35);transition:transform .15s ease, box-shadow .15s ease}
-  .btn:active{transform:translateY(1px)}
-  .btn.line,.btn.green{background:linear-gradient(120deg,var(--green),#3fd07d);box-shadow:0 10px 24px rgba(47,184,107,.4)}
-  .btn.pink{background:linear-gradient(120deg,var(--pink),#ff86bb);box-shadow:0 10px 24px rgba(255,95,162,.38)}
-  .btn.orange{background:linear-gradient(120deg,var(--orange),#ffb84d);box-shadow:0 10px 24px rgba(255,159,28,.38)}
-  .btn:hover{transform:translateY(-2px)}
-  .btn.ghost{background:#fff;color:var(--green-d);border:2px solid var(--green);box-shadow:none}
+/* top bar */
+.bar{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 20px;padding-top:calc(10px + env(safe-area-inset-top,0px));transition:background .3s,backdrop-filter .3s}
+.bar.solid{background:rgba(14,15,12,.82);backdrop-filter:blur(10px)}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:#fff}
+.brand img{width:40px;height:40px;border-radius:50%;background:#fff;padding:2px}
+.brand b{font-family:var(--f-sub);font-weight:800;font-size:15px;letter-spacing:.02em;line-height:1.1}
+.brand small{display:block;font-family:var(--f-body);font-weight:700;font-size:11px;opacity:.75;letter-spacing:.05em}
+.bar nav{display:flex;gap:4px;align-items:center}
+.bar nav a.n{color:#fff;text-decoration:none;font-size:13px;font-weight:700;padding:6px 10px;border-radius:999px;opacity:.85}
+.bar nav a.n:hover{opacity:1;background:rgba(255,255,255,.1)}
+.bar .mini{background:var(--lime);color:var(--ink);font-weight:900;font-size:13px;padding:8px 14px;border-radius:999px;text-decoration:none;white-space:nowrap}
 
-  /* header */
-  header{position:sticky;top:0;z-index:50;background:rgba(255,253,248,.85);
-    backdrop-filter:saturate(140%) blur(10px);border-bottom:1px solid rgba(38,49,58,.06)}
-  .nav{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
-  .brand{display:flex;align-items:center;gap:10px;font-family:"M PLUS Rounded 1c";font-weight:800;font-size:1.12rem}
-  .logo{width:42px;height:42px;border-radius:0;object-fit:contain;display:block;flex:0 0 auto;background:none;box-shadow:none}
-  .hero-copy{position:relative;z-index:3}
-  .hero-mark{position:absolute;left:48%;top:48%;transform:translate(-50%,-50%);z-index:-1;
-    width:clamp(360px,50vw,640px);height:auto;opacity:.30;pointer-events:none;user-select:none}
-  @media(max-width:880px){.hero-mark{top:44%;width:112vw;max-width:620px;opacity:.26}}
-  .nav-links{display:flex;gap:22px;align-items:center}
-  .nav-links a{font-weight:500;color:var(--muted);font-size:.95rem}
-  .nav-links a:hover{color:var(--ink)}
-  .nav .btn{padding:10px 18px;font-size:.9rem;box-shadow:0 6px 16px rgba(47,184,107,.3)}
-  @media(max-width:820px){.nav-links a:not(.btn){display:none}}
+/* hero */
+.hero{position:relative;min-height:100svh;display:grid;align-items:end;overflow:hidden;isolation:isolate;background:var(--ink);color:#fff}
+.reel{position:absolute;inset:0;display:grid;grid-template-columns:repeat(3,1fr);gap:4px;z-index:-2}
+.reel .col{position:relative;overflow:hidden;background:#000}
+.reel video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:opacity .8s ease}
+.reel video.off{opacity:0}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(14,15,12,.6) 0%,rgba(14,15,12,.2) 25%,rgba(14,15,12,.55) 55%,rgba(14,15,12,.95) 88%,var(--ink) 100%),linear-gradient(90deg,rgba(14,15,12,.55),transparent 60%)}
+.arc{position:absolute;z-index:-1;pointer-events:none;inset:auto -10% 8% -10%;height:60%}
+.arc path{fill:none;stroke:var(--lime);stroke-width:3;stroke-linecap:round;stroke-dasharray:6 14;opacity:.75}
+.hero-in{padding-block:140px 44px;display:grid;gap:18px}
+.wordmark{font-family:var(--f-latin);font-weight:400;line-height:.9;letter-spacing:.005em;font-size:clamp(60px,9.5vw,150px);text-transform:uppercase}
+.hero .eyebrow{color:var(--lime)}
+.wordmark .o{color:transparent;-webkit-text-stroke:2px #fff}
+.wordmark .l{color:var(--lime)}
+.catch{font-family:var(--f-body);font-weight:900;font-size:clamp(26px,4.4vw,52px);line-height:1.25;letter-spacing:.02em}
+.catch mark{background:none;color:var(--lime);white-space:nowrap}
+.lead{max-width:30em;font-size:clamp(15px,1.6vw,18px);color:#e8eae1}
+.facts{display:flex;flex-wrap:wrap;gap:0;border:1px solid rgba(255,255,255,.28);border-radius:14px;overflow:hidden;width:fit-content;max-width:100%;background:rgba(14,15,12,.5);backdrop-filter:blur(6px)}
+.facts span{padding:10px 16px;font-weight:900;font-size:14px;white-space:nowrap;border-right:1px solid rgba(255,255,255,.18)}
+.facts span:last-child{border-right:0}
+.facts b{color:var(--lime)}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:16px 26px;border-radius:999px;font-weight:900;text-decoration:none;font-size:16px;transition:transform .15s ease,box-shadow .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn-line{background:var(--line-green);color:#fff;box-shadow:0 10px 30px -10px var(--line-green)}
+.btn-ghost{border:1.5px solid rgba(255,255,255,.65);color:#fff}
+.btn-dark{background:var(--ink);color:#fff}
+.btn svg{width:22px;height:22px;flex:none}
+.scroll-cue{position:absolute;right:20px;bottom:28px;font-family:var(--f-sub);font-size:11px;letter-spacing:.3em;writing-mode:vertical-rl;color:#fff;opacity:.7}
+.scroll-cue::after{content:"";display:block;width:1px;height:48px;background:#fff;margin:10px auto 0;animation:cue 1.8s ease-in-out infinite;transform-origin:top}
+@keyframes cue{0%{transform:scaleY(0)}50%{transform:scaleY(1)}100%{transform:scaleY(0);transform-origin:bottom}}
 
-  /* hero */
-  .hero{position:relative;padding:56px 0 76px;overflow:hidden;
-    background:
-      radial-gradient(circle at 18% 22%, rgba(255,159,28,.10) 0 1.6px, transparent 2px) 0 0/26px 26px,
-      linear-gradient(160deg,#fff4f9 0%,#fff6ea 46%,#eefbf2 100%)}
-  .hero-grid{position:relative;z-index:3;display:grid;grid-template-columns:1.04fr .96fr;gap:46px;align-items:center}
-  @media(max-width:880px){.hero-grid{grid-template-columns:1fr;gap:30px}}
-  /* soft accent circles + dots */
-  .accent{position:absolute;border-radius:50%;filter:blur(2px);z-index:1;opacity:.5}
-  .ac-pink{width:300px;height:300px;background:radial-gradient(circle at 34% 32%,#ffc0db,#ff7ab0);top:-60px;right:6%}
-  .ac-green{width:230px;height:230px;background:radial-gradient(circle at 34% 32%,#aef0c9,#5fd698);bottom:-70px;left:-50px}
-  .hdot{position:absolute;border-radius:50%;z-index:2}
-  .hd1{width:14px;height:14px;background:var(--orange);top:90px;left:46%}
-  .hd2{width:10px;height:10px;background:var(--pink);top:150px;left:38%}
-  .hd3{width:16px;height:16px;background:var(--green);bottom:90px;right:42%}
-  .hd4{width:11px;height:11px;background:var(--orange);top:60px;right:36%}
-  .hd5{width:13px;height:13px;background:var(--pink);bottom:50px;left:30%}
-  @media(max-width:880px){.hd1,.hd2,.hd3,.hd4,.hd5{display:none}}
+/* ticker */
+.ticker{background:var(--lime);color:var(--ink);overflow:hidden;border-block:2px solid var(--ink)}
+.ticker .track{display:flex;width:max-content;animation:tick 30s linear infinite}
+.ticker span{font-family:var(--f-latin);font-size:clamp(18px,2.4vw,26px);padding:10px 22px;white-space:nowrap;text-transform:uppercase}
+.ticker span::after{content:"";display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--ink);margin-left:44px;vertical-align:middle}
+@keyframes tick{to{transform:translateX(-50%)}}
 
-  .ribbon{display:inline-flex;align-items:center;gap:6px;background:#fff;border:2px solid #ffd0e3;
-    color:var(--pink-d);font-weight:700;font-size:.85rem;padding:8px 16px;border-radius:999px;box-shadow:var(--ring)}
-  .hero h1{font-size:clamp(2.05rem,6vw,3.5rem);font-weight:800;line-height:1.22;margin:16px 0 0}
-  .brush{position:relative;white-space:nowrap;z-index:1}
-  .brush::after{content:"";position:absolute;left:-2px;right:-2px;bottom:.08em;height:.34em;z-index:-1;border-radius:999px;
-    background:linear-gradient(90deg,#ffd36b,#ff9bbd);transform:rotate(-1deg)}
-  .hero .sub{margin:18px 0 26px;font-size:1.04rem;color:var(--ink);max-width:560px}
-  .cta-row{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
-  .pills{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
-  .pill{background:#fff;border-radius:999px;padding:9px 16px;font-weight:700;font-size:.88rem;
-    box-shadow:var(--ring);display:flex;align-items:center;gap:7px}
-  .pill .e{font-size:1.05rem}
+section{padding-block:clamp(72px,10vw,130px)}
+.dark{background:var(--ink);color:#fff}
+.sec-head{display:grid;gap:12px;margin-bottom:clamp(30px,4vw,52px)}
+.sec-head h2{font-family:var(--f-body);font-weight:900;font-size:clamp(28px,4.4vw,50px);line-height:1.3}
+.sec-head p{color:var(--mute-2);max-width:40em}
+.dark .sec-head p{color:var(--mute)}
 
-  .hero-visual{position:relative;z-index:3;padding:10px 14px}
-  .photo-frame{border-radius:34px;overflow:hidden;border:8px solid #fff;aspect-ratio:4/3;
-    box-shadow:0 26px 54px rgba(38,49,58,.20);transform:rotate(-2.5deg)}
-  .photo-frame img{width:100%;height:100%;object-fit:cover}
-  .stamp{position:absolute;top:-14px;right:4px;width:98px;height:98px;border-radius:50%;border:3px solid #fff;
-    background:linear-gradient(135deg,var(--orange),#ffc25e);color:#fff;display:grid;place-items:center;
-    text-align:center;font-family:"M PLUS Rounded 1c";font-weight:800;font-size:.92rem;line-height:1.25;
-    box-shadow:0 10px 22px rgba(255,159,28,.42);transform:rotate(9deg)}
-  .fe{position:absolute;font-size:2rem;z-index:4;filter:drop-shadow(0 6px 10px rgba(0,0,0,.12))}
-  .fe1{bottom:-10px;left:-6px;font-size:2.4rem}
-  .fe2{top:8px;left:-14px;font-size:1.9rem}
-  .fe3{bottom:30%;right:-14px;font-size:1.6rem}
-  @media(max-width:880px){.photo-frame{transform:rotate(-1.5deg)}.stamp{width:82px;height:82px;font-size:.82rem}}
+/* intro */
+.intro{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(30px,6vw,80px);align-items:center}
+.intro > *{min-width:0}
+.intro h2{font-family:var(--f-body);font-weight:900;font-size:clamp(30px,4.8vw,56px);line-height:1.25}
+.intro h2 .u{background:linear-gradient(transparent 62%,var(--lime) 62%)}
+.intro .body{display:grid;gap:18px}
+.intro .body p{max-width:34em}
+.stack{position:relative;aspect-ratio:4/5}
+.stack figure{position:absolute;margin:0;border-radius:18px;overflow:hidden;box-shadow:0 24px 50px -24px rgba(21,22,18,.55)}
+.stack img{width:100%;height:100%;object-fit:cover}
+.stack .a{inset:0 22% 30% 0}
+.stack .b{inset:38% 0 0 30%;border:6px solid var(--paper)}
+.stack .stamp{position:absolute;left:-6px;bottom:6%;z-index:2;width:118px;height:118px;border-radius:50%;background:var(--ink);color:var(--lime);display:grid;place-items:center;text-align:center;font-weight:900;font-size:14px;line-height:1.35;transform:rotate(-10deg)}
+.stack .stamp b{display:block;font-family:var(--f-ja);font-weight:400;font-size:26px;line-height:1;color:#fff}
 
-  /* generic media card */
-  .grid{display:grid;gap:22px}
-  .g3{grid-template-columns:repeat(3,1fr)}
-  .g2{grid-template-columns:repeat(2,1fr)}
-  @media(max-width:860px){.g3{grid-template-columns:1fr}.g2{grid-template-columns:1fr}}
-  .card{background:var(--card);border-radius:var(--round);box-shadow:var(--ring);overflow:hidden}
-  .card .ph{aspect-ratio:4/3;background:linear-gradient(135deg,#e9fbf0,#ffe9f3);overflow:hidden}
-  .card .ph img{width:100%;height:100%;object-fit:cover}
-  .card .body{padding:22px 22px 26px}
-  .card h3{font-size:1.18rem;font-weight:800;margin-bottom:8px}
-  .card p{color:var(--muted);font-size:.96rem}
-  .top-line{height:6px}
-  .tl-green{background:var(--green)} .tl-pink{background:var(--pink)} .tl-orange{background:var(--orange)}
+/* motion chapters */
+.chapter{position:relative;min-height:100svh;display:grid;align-items:center;overflow:hidden;isolation:isolate;background:var(--ink);color:#fff;padding-block:80px}
+.chapter video.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
+.chapter::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(14,15,12,.9) 0%,rgba(14,15,12,.55) 45%,rgba(14,15,12,.1) 100%)}
+.chapter.r::before{background:linear-gradient(270deg,rgba(14,15,12,.9) 0%,rgba(14,15,12,.55) 45%,rgba(14,15,12,.1) 100%)}
+.chapter .in{display:grid;gap:16px;max-width:560px}
+.chapter.r .in{margin-left:auto;text-align:right;justify-items:end}
+.chapter .no{font-family:var(--f-sub);font-weight:800;letter-spacing:.24em;font-size:13px;color:var(--lime)}
+.chapter .word{font-family:var(--f-latin);font-weight:400;font-size:clamp(76px,15vw,220px);line-height:.82;text-transform:uppercase;letter-spacing:.01em}
+.chapter .word span{display:inline-block;transition:transform .9s cubic-bezier(.2,.8,.2,1),opacity .9s}
+.chapter .word.pre span{transform:translateY(40%);opacity:0}
+.chapter .word.long{font-size:clamp(52px,10.5vw,170px)}
+.chapter h3{font-weight:900;font-size:clamp(22px,2.8vw,30px);line-height:1.4}
+.chapter p{color:#dfe2d6;max-width:28em}
+.chapter .chips{display:flex;flex-wrap:wrap;gap:8px}
+.chapter.r .chips{justify-content:flex-end}
+.chapter .chips span{font-size:13px;font-weight:700;padding:5px 12px;border-radius:999px;border:1px solid rgba(255,255,255,.4);background:rgba(14,15,12,.4)}
+.chapter .frame{position:absolute;right:max(20px,calc((100vw - 1180px)/2 + 20px));bottom:40px;width:min(230px,34vw);aspect-ratio:9/16;border-radius:20px;overflow:hidden;border:3px solid var(--lime);box-shadow:0 30px 60px -20px rgba(0,0,0,.7);z-index:1}
+.chapter.r .frame{right:auto;left:max(20px,calc((100vw - 1180px)/2 + 20px))}
+.chapter .frame video{width:100%;height:100%;object-fit:cover}
 
-  /* feature numbered */
-  .feat{display:flex;gap:18px;align-items:flex-start;background:#fff;border-radius:var(--round);
-    padding:24px;box-shadow:var(--ring)}
-  .feat .num{flex:none;width:54px;height:54px;border-radius:16px;display:grid;place-items:center;
-    color:#fff;font-family:"M PLUS Rounded 1c";font-weight:800;font-size:1.5rem}
-  .n-green{background:linear-gradient(135deg,var(--green),#52d68c)}
-  .n-pink{background:linear-gradient(135deg,var(--pink),#ff8cc0)}
-  .n-orange{background:linear-gradient(135deg,var(--orange),#ffc163)}
-  .feat h3{font-size:1.14rem;margin-bottom:6px}
-  .feat p{color:var(--muted);font-size:.95rem}
+/* growth story (horizontal) */
+.growth .rail{display:grid;grid-auto-flow:column;grid-auto-columns:min(250px,64vw);gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 20px 18px;margin-inline:-20px;scrollbar-width:thin}
+.growth figure{margin:0;scroll-snap-align:start;display:grid;gap:12px}
+.growth .clip{position:relative;border-radius:18px;overflow:hidden;aspect-ratio:9/16;background:#000}
+.growth video{width:100%;height:100%;object-fit:cover}
+.growth .step{position:absolute;left:12px;top:12px;font-family:var(--f-latin);font-size:15px;background:var(--lime);color:var(--ink);padding:3px 10px;border-radius:999px;letter-spacing:.04em}
+.growth figcaption b{display:block;font-weight:900;font-size:16px}
+.growth figcaption span{font-size:13px;color:var(--mute)}
+.rail-hint{margin-top:6px;font-size:12px;color:var(--mute);display:flex;align-items:center;gap:8px}
+.rail-hint::before{content:"";width:28px;height:1px;background:currentColor}
 
-  /* about band */
-  .band{background:linear-gradient(135deg,#effbf3,#fff0f7 55%,#fff6e9)}
+/* points */
+.points{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:2px solid var(--paper-ink)}
+.point{min-width:0;padding:28px 24px 30px 0;display:grid;gap:10px;align-content:start;border-bottom:1px solid #d6d2c6}
+.point + .point{padding-left:24px;border-left:1px solid #d6d2c6}
+.point .num{font-family:var(--f-latin);font-size:46px;line-height:1;color:var(--lime-ink)}
+.point h3{font-weight:900;font-size:20px;line-height:1.45}
+.point p{color:var(--mute-2);font-size:15px}
 
-  /* video */
-  .video{position:relative;aspect-ratio:16/9;border-radius:18px;overflow:hidden;box-shadow:var(--ring);background:#000}
-  .video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+/* classes */
+.classes{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.cls{min-width:0;background:#fff;border-radius:22px;padding:26px 24px;display:grid;gap:12px;align-content:start;border:1px solid #e1ddd2}
+.cls .tag{font-weight:900;font-size:13px;letter-spacing:.08em;color:var(--lime-ink)}
+.cls h3{font-weight:900;font-size:22px}
+.cls .age{display:inline-block;width:fit-content;font-weight:900;font-size:13px;background:var(--ink);color:var(--lime);padding:4px 12px;border-radius:999px}
+.cls p{color:var(--mute-2);font-size:15px}
+.cls.hot{background:var(--ink);color:#fff;border-color:var(--ink)}
+.cls.hot p{color:var(--mute)}
+.cls.hot .tag{color:var(--lime)}
+.cls.hot .age{background:var(--lime);color:var(--ink)}
 
-  /* schedule */
-  .sched{background:#fff;border-radius:var(--round);box-shadow:var(--ring);overflow:hidden}
-  .sched .head{padding:20px 24px;color:#fff;font-family:"M PLUS Rounded 1c";font-weight:800;font-size:1.15rem;
-    background:linear-gradient(120deg,var(--green),var(--orange))}
-  .row{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:16px 24px;border-bottom:1px dashed #eef0ee}
-  .row:last-child{border-bottom:0}
-  .row .cls{font-weight:700}
-  .row .time{color:var(--muted)}
-  .seat{flex:none;font-size:.8rem;font-weight:700;color:#fff;background:var(--pink);padding:4px 12px;border-radius:999px}
-  .prep{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
-  .prep span{background:#fff;border:2px solid #f0e6d8;border-radius:999px;padding:8px 16px;font-weight:700;font-size:.9rem}
-  .note{margin-top:18px;background:#fff;border-left:6px solid var(--green);border-radius:14px;
-    padding:16px 20px;box-shadow:var(--ring);font-size:.96rem}
-  .note strong{color:var(--green-d)}
+/* finder */
+.finder .tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+.finder .tabs button{font:inherit;font-weight:900;font-size:15px;padding:10px 18px;border-radius:999px;border:1.5px solid var(--line);background:transparent;color:#fff;cursor:pointer}
+.finder .tabs button small{font-weight:700;font-size:12px;color:var(--mute);margin-left:6px}
+.finder .tabs button[aria-selected="true"]{background:var(--lime);color:var(--ink);border-color:var(--lime)}
+.finder .tabs button[aria-selected="true"] small{color:var(--ink)}
+.room{display:none;grid-template-columns:1.05fr .95fr;gap:22px;align-items:stretch}
+.room.on{display:grid}
+.room > *{min-width:0}
+.room .info{background:var(--ink-2);border:1px solid var(--line);border-radius:22px;padding:26px;display:grid;gap:16px;align-content:start}
+.room .title{display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.room h3{font-weight:900;font-size:clamp(22px,2.6vw,28px);line-height:1.35}
+.room .day{font-family:var(--f-ja);font-size:24px;color:var(--lime);line-height:1}
+.room .addr{color:var(--mute);font-size:14px}
+.slots{display:grid;gap:0}
+.slot{display:grid;grid-template-columns:auto 1fr;gap:2px 18px;align-items:center;padding:12px 0;border-top:1px dashed var(--line)}
+.slot .t{font-family:var(--f-sub);font-weight:800;font-size:clamp(19px,2.4vw,24px);font-variant-numeric:tabular-nums;letter-spacing:-.01em}
+.slot .n{font-weight:900}
+.room .fee{display:flex;flex-wrap:wrap;gap:6px 18px;align-items:baseline;padding-top:14px;border-top:1px solid var(--line)}
+.room .fee b{font-family:var(--f-sub);font-weight:800;font-size:26px}
+.room .fee span{font-size:13px;color:var(--mute)}
+.mapbox{position:relative;min-height:300px;border-radius:22px;overflow:hidden;background:#222}
+.mapbox iframe{position:absolute;inset:0;width:100%;height:100%;border:0;filter:grayscale(.2)}
+.swap{margin-top:22px;display:flex;gap:14px;align-items:center;padding:18px 22px;border-radius:18px;background:color-mix(in srgb,var(--lime) 14%,var(--ink));border:1px solid color-mix(in srgb,var(--lime) 40%,var(--line))}
+.swap svg{width:30px;height:30px;color:var(--lime);flex:none}
+.swap b{color:var(--lime)}
 
-  /* classrooms */
-  .rooms{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:8px}
-  @media(max-width:860px){.rooms{grid-template-columns:1fr}}
-  .room{background:#fff;border-radius:var(--round);box-shadow:var(--ring);padding:22px 22px 24px;border-top:6px solid var(--green)}
-  .room:nth-child(3n+2){border-top-color:var(--pink)}
-  .room:nth-child(3n){border-top-color:var(--orange)}
-  .room .area{display:inline-block;font-family:"M PLUS Rounded 1c";font-weight:800;font-size:1.25rem;margin-bottom:2px}
-  .room .rname{color:var(--muted);font-size:.9rem;margin-bottom:12px}
-  .room .meta{font-size:.92rem;margin-bottom:10px}
-  .room .meta b{color:var(--ink)}
-  .room .times{display:flex;flex-wrap:wrap;gap:8px}
-  .room .times span{background:#f5faf6;border-radius:10px;padding:6px 12px;font-size:.85rem;font-weight:700;color:var(--ink)}
+/* teacher */
+.teacher{display:grid;grid-template-columns:auto 1fr;gap:clamp(22px,5vw,60px);align-items:center}
+.teacher > *{min-width:0}
+.mono{width:clamp(140px,20vw,220px);aspect-ratio:1;border-radius:50%;background:#fff;display:grid;place-items:center;border:3px solid var(--paper-ink)}
+.mono img{width:84%;height:84%;object-fit:contain}
+.teacher .role{font-size:13px;color:var(--mute-2)}
+.teacher h3{font-family:var(--f-ja);font-weight:400;font-size:clamp(34px,5vw,56px);line-height:1.2;margin-block:6px 16px}
+.teacher ul{margin:0;padding:0;list-style:none;display:grid;gap:8px}
+.teacher li{padding-left:22px;position:relative}
+.teacher li::before{content:"";position:absolute;left:0;top:.75em;width:10px;height:10px;border-radius:50%;background:var(--lime-ink)}
+.teacher .note{margin-top:16px;color:var(--mute-2);font-size:14px}
 
-  /* instructor */
-  .inst{display:grid;grid-template-columns:280px 1fr;gap:28px;align-items:center;
-    background:#fff;border-radius:28px;box-shadow:var(--ring);overflow:hidden}
-  .inst .pic{aspect-ratio:1;background:linear-gradient(135deg,#c8f5dc,#ffd6e8);height:100%}
-  .inst .pic img{width:100%;height:100%;object-fit:cover}
-  .inst .info{padding:28px 30px}
-  .inst h3{font-size:1.5rem}
-  .inst .role{color:var(--green-d);font-weight:700;margin-bottom:10px}
-  .inst ul{list-style:none;color:var(--muted);font-size:.95rem;margin:0 0 16px}
-  .inst li{padding-left:22px;position:relative}
-  .inst li::before{content:"🤸";position:absolute;left:0}
-  @media(max-width:740px){.inst{grid-template-columns:1fr}.inst .pic{aspect-ratio:16/10}}
+/* faq */
+.faq{display:grid;gap:0;max-width:860px;border-top:2px solid var(--paper-ink)}
+.faq details{border-bottom:1px solid #d6d2c6}
+.faq summary{cursor:pointer;list-style:none;padding:20px 52px 20px 0;font-weight:900;font-size:17px;position:relative}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:6px;top:50%;transform:translateY(-50%);font-family:var(--f-sub);font-weight:800;font-size:26px;color:var(--lime-ink)}
+.faq details[open] summary::after{content:"–"}
+.faq details p{padding:0 0 22px;color:var(--mute-2);font-size:15px;max-width:44em}
 
-  /* map */
-  .map{aspect-ratio:16/9;border-radius:18px;overflow:hidden;box-shadow:var(--ring);border:0}
-  .map iframe{width:100%;height:100%;border:0;display:block}
+/* final */
+.final{position:relative;overflow:hidden;isolation:isolate;text-align:center;background:var(--ink);color:#fff;padding-block:clamp(100px,14vw,170px)}
+.final video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
+.final::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,var(--ink),rgba(14,15,12,.6) 30%,rgba(14,15,12,.6) 70%,var(--ink))}
+.final .in{display:grid;gap:22px;justify-items:center}
+.final h2{font-weight:900;font-size:clamp(32px,6vw,68px);line-height:1.2}
+.final h2 span{color:var(--lime)}
+.final .lead{margin-inline:auto}
 
-  /* FAQ（よくある質問・アコーディオン） */
-  .faq-wrap{max-width:760px;margin-inline:auto;display:flex;flex-direction:column;gap:14px}
-  .faq-item{background:#fff;border-radius:var(--round);box-shadow:var(--ring);overflow:hidden;border-top:6px solid var(--green)}
-  .faq-item:nth-child(3n+2){border-top-color:var(--pink)}
-  .faq-item:nth-child(3n){border-top-color:var(--orange)}
-  .faq-item summary{list-style:none;cursor:pointer;padding:20px 58px 20px 22px;
-    font-family:"M PLUS Rounded 1c","Noto Sans JP",sans-serif;font-weight:800;font-size:1.02rem;
-    color:var(--ink);position:relative;line-height:1.55}
-  .faq-item summary::-webkit-details-marker{display:none}
-  .faq-item summary .qmark{color:var(--green-d);margin-right:6px}
-  .faq-item summary::after{content:"+";position:absolute;right:18px;top:50%;transform:translateY(-50%);
-    width:30px;height:30px;border-radius:50%;background:#eefaf2;color:var(--green-d);display:grid;place-items:center;
-    font-size:1.5rem;font-weight:800;transition:background .2s, color .2s}
-  .faq-item[open] summary::after{content:"–";background:#ffe7f1;color:var(--pink-d)}
-  .faq-item summary:hover{color:var(--green-d)}
-  .faq-a{padding:2px 22px 22px;color:var(--muted);font-size:.96rem;line-height:1.9}
-  .faq-a b{color:var(--ink)}
-  .faq-a ul{margin:10px 0 0;padding-left:1.2em}
-  .faq-a li{margin:2px 0}
-  .faq-foot{text-align:center;margin-top:24px;color:var(--muted);font-weight:700;font-size:.95rem}
+footer{background:var(--ink);color:var(--mute);border-top:1px solid var(--line);padding-block:40px 120px;font-size:13px}
+footer .wrap{display:grid;gap:14px}
+footer .row{display:flex;align-items:center;gap:12px}
+footer img{width:46px;height:46px;border-radius:50%;background:#fff;padding:2px}
+footer strong{color:#fff;font-family:var(--f-sub);font-weight:800;font-size:18px}
+footer a{color:#fff}
+footer .links{display:flex;flex-wrap:wrap;gap:8px 18px}
 
-  /* CTA band */
-  .cta{background:linear-gradient(120deg,var(--green),var(--pink) 55%,var(--orange));color:#fff;border-radius:30px;
-    padding:48px 28px;text-align:center;box-shadow:0 24px 60px rgba(255,95,162,.28)}
-  .cta h2{font-size:clamp(1.6rem,5.5vw,2.3rem);font-weight:800;margin-bottom:10px}
-  .cta p{opacity:.95;margin-bottom:24px}
-  .cta .btn{background:#fff;color:var(--green-d);box-shadow:0 10px 24px rgba(0,0,0,.15)}
-  .cta .btn.alt{background:rgba(255,255,255,.16);color:#fff;border:2px solid rgba(255,255,255,.6)}
+.sticky{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom,0px));z-index:60;display:none;transition:transform .3s,opacity .3s}
+.sticky.hide{transform:translateY(140%);opacity:0}
+.sticky .btn{width:100%}
 
-  /* related */
-  .rel .ph{aspect-ratio:16/9}
-  .rel .body .btn{margin-top:14px;font-size:.92rem;padding:11px 20px}
+.rv{transition:transform .8s cubic-bezier(.2,.7,.2,1),opacity .8s}
+.rv.pre{transform:translateY(28px);opacity:.001}
 
-  /* footer */
-  footer{background:#26313a;color:#cdd6df;padding:46px 0 30px;margin-top:20px}
-  footer .grid-f{display:flex;flex-wrap:wrap;gap:26px;justify-content:space-between;align-items:flex-start}
-  footer .brand{color:#fff}
-  footer a{color:#cdd6df}
-  footer a:hover{color:#fff}
-  .fcontact{font-size:.95rem;line-height:2}
-  .copy{margin-top:26px;font-size:.82rem;color:#8794a1;border-top:1px solid #3a4651;padding-top:16px}
-
-  .reveal{opacity:0;transform:translateY(24px);transition:opacity .6s ease, transform .6s ease}
-  .reveal.in{opacity:1;transform:none}
+@media (max-width:900px){
+  .intro{grid-template-columns:1fr}
+  .stack{max-width:460px;width:100%;margin-inline:auto}
+  .points{grid-template-columns:1fr}
+  .point,.point + .point{padding:24px 0;border-left:0}
+  .classes{grid-template-columns:1fr}
+  .room{grid-template-columns:1fr}
+  .bar nav a.n{display:none}
+}
+@media (max-width:600px){
+  .reel{grid-template-columns:1fr 1fr}
+  .reel .col:nth-child(3){display:none}
+  .hero-in{padding-block:120px 36px}
+  .wordmark .o{-webkit-text-stroke:1.5px #fff}
+  .facts{display:grid;grid-template-columns:1fr 1fr;width:100%}
+  .facts span{padding:9px 12px;font-size:13px;text-align:center;border-bottom:1px solid rgba(255,255,255,.18)}
+  .facts span:nth-child(2n){border-right:0}
+  .facts span:nth-child(n+3){border-bottom:0}
+  .cta-row .btn{width:100%}
+  .hero-in{gap:14px}
+  .chapter{align-items:end;padding-block:80px 300px}
+  .chapter::before,.chapter.r::before{background:linear-gradient(180deg,rgba(14,15,12,.2) 0%,rgba(14,15,12,.4) 40%,rgba(14,15,12,.92) 75%)}
+  .chapter.r .in{text-align:left;justify-items:start;margin-left:0}
+  .chapter.r .chips{justify-content:flex-start}
+  .chapter .frame,.chapter.r .frame{width:130px;bottom:auto;top:90px;right:16px;left:auto}
+  .chapter{min-height:88svh;padding-bottom:112px}
+  .chapter .word{font-size:clamp(72px,24vw,120px)}
+  .chapter .word.long{font-size:clamp(48px,15.5vw,84px)}
+  .teacher{grid-template-columns:1fr}
+  .sticky{display:block}
+  .scroll-cue{display:none}
+  .brand small{display:none}
+}
+@media (prefers-reduced-motion:reduce){
+  .ticker .track,.scroll-cue::after{animation:none}
+  .rv,.rv.pre,.chapter .word span{transform:none!important;opacity:1!important;transition:none}
+  html{scroll-behavior:auto}
+}
 </style>
 </head>
 <body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-line" viewBox="0 0 24 24"><path fill="currentColor" d="M12 3C6.5 3 2 6.6 2 11c0 3.9 3.5 7.2 8.3 7.9.3.1.8.2.9.5.1.3.1.7 0 1l-.1.9c0 .3-.2 1 .9.5s5.9-3.5 8-6C21.4 14.2 22 12.7 22 11c0-4.4-4.5-8-10-8Z"/></symbol>
+  <symbol id="i-swap" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M4 8h13l-3-3M20 16H7l3 3"/></symbol>
+</svg>
+<div class="page">
 
-<header>
-  <div class="wrap nav">
-    <div class="brand"><img class="logo" src="logo.png" alt="徳島タンブ体操教室のロゴ" width="42" height="42" />徳島タンブ体操教室</div>
-    <nav class="nav-links">
-      <a href="#about">教室について</a>
-      <a href="#theme">3つのテーマ</a>
-      <a href="#schedule">教室案内</a>
-      <a href="#access">アクセス</a>
-      <a href="#faq">よくある質問</a>
-      <a class="btn line" href="https://lin.ee/Q6KsIKI" target="_blank" rel="noopener">無料体験</a>
-    </nav>
-  </div>
+<header class="bar" id="bar">
+  <a class="brand" href="#top"><img src="logo.png" alt="" width="40" height="40"><span><b>sowers 体操教室</b><small>徳島タンブ／ステップ／ホップ／ジャンプ／フレッシュ</small></span></a>
+  <nav>
+    <a class="n" href="#classes">クラス</a>
+    <a class="n" href="#find">教室を探す</a>
+    <a class="n" href="#faq">よくある質問</a>
+    <a class="mini" href="https://lin.ee/Q6KsIKI" target="_blank" rel="noopener">無料体験</a>
+  </nav>
 </header>
 
-<!-- HERO -->
-<section class="hero">
-  <span class="accent ac-pink"></span><span class="accent ac-green"></span>
-  <span class="hdot hd1"></span><span class="hdot hd2"></span><span class="hdot hd3"></span><span class="hdot hd4"></span><span class="hdot hd5"></span>
-  <div class="wrap hero-grid">
-    <div class="hero-copy">
-      <img class="hero-mark" src="logo.png" alt="" aria-hidden="true" />
-      <span class="ribbon">⭐ 運動が好きになる体操教室</span>
-      <h1>できた！が増える、<br><span class="brush">徳島タンブ体操教室</span>。</h1>
-      <p class="sub">「何か運動を始めさせたい」「体の使い方を知ってほしい」「好きなスポーツを見つけてあげたい」。そんな保護者の方にぴったりの教室です。初心者・運動が苦手なお子さんも大歓迎！</p>
-      <div class="cta-row">
-        <a class="btn line" href="https://lin.ee/Q6KsIKI" target="_blank" rel="noopener">📱 無料体験を申し込む</a>
-        <a class="btn ghost" href="#about">教室について見る</a>
-      </div>
-      <div class="pills">
-        <span class="pill"><span class="e">🌱</span>はじめての習い事に</span>
-        <span class="pill"><span class="e">🤸</span>大きなトランポリンマット</span>
-        <span class="pill"><span class="e">⚽</span>スポーツの入り口</span>
-      </div>
-    </div>
-    <div class="hero-visual">
-      <div class="photo-frame">
-        <img loading="lazy" src="images/63e9cce0d6e86.jpg" alt="徳島タンブ体操教室の練習風景">
-      </div>
-      <span class="stamp">無料体験<br>受付中</span>
-      <span class="fe fe1">⭐</span>
-      <span class="fe fe2">🎈</span>
-      <span class="fe fe3">✨</span>
+<section class="hero" id="top" style="padding:0">
+  <div class="reel" aria-hidden="true">
+    <div class="col" data-clips="t307,t241,t806"></div>
+    <div class="col" data-clips="t256,t654,t740"></div>
+    <div class="col" data-clips="t148,t252,t840"></div>
+  </div>
+  <svg class="arc" viewBox="0 0 1000 300" preserveAspectRatio="none" aria-hidden="true"><path d="M0 290 C 250 -60, 600 -60, 1000 250"/></svg>
+  <div class="wrap hero-in">
+    <p class="eyebrow">徳島の子ども体操教室</p>
+    <h1 class="wordmark">Jump<span class="l">.</span> <span class="o">Roll</span><span class="l">.</span><br>Fly<span class="l">.</span></h1>
+    <p class="catch">「できた！」が、<mark>止まらない。</mark></p>
+    <p class="lead">跳んで、回って、夢中になる。エアトランポリンで、どんな子も自分のペースで新しい技に挑戦できる体操教室です。</p>
+    <div class="facts"><span>徳島県内<b>6</b>教室</span><span>満<b>3</b>歳から</span><span>振替<b>OK</b></span><span>無料体験<b>受付中</b></span></div>
+    <div class="cta-row">
+      <a class="btn btn-line" href="https://lin.ee/Q6KsIKI" target="_blank" rel="noopener"><svg><use href="#i-line"/></svg>LINEで無料体験を予約する</a>
+      <a class="btn btn-ghost" href="#find">近くの教室を探す</a>
     </div>
   </div>
+  <span class="scroll-cue" aria-hidden="true">スクロール</span>
 </section>
 
-<!-- ABOUT -->
-<section id="about" class="band">
-  <div class="wrap">
-    <div class="grid g2" style="align-items:center">
-      <div class="reveal">
-        <span class="tag green">タンブ体操教室とは？</span>
-        <h2 class="sec-title">徳島では珍しい<br>エアトラックマットの体操教室</h2>
-        <p style="color:var(--muted)">満3歳〜12歳のキッズ向け。エアトラックマットは空気を入れた弾力のあるマットで、マット＋トランポリンをイメージするとわかりやすいです。通常より小さな力で高く跳べるので、まだ筋肉が少ないお子さんでもアクロバット技に挑戦できます。頭を打っても痛くないので、安全に練習していただけます。</p>
-        <p style="color:var(--muted);margin-top:14px">「タンブ」は前回り・後ろ回り・バク転などの体操技の総称「タンブリング」から。子どもたちがタンブリングを好きになるよう願って名付けました。</p>
-      </div>
-      <div class="card reveal">
-        <div class="ph"><img loading="lazy" src="images/606c0ccf9f190.jpg" alt="エアトラックマット"></div>
-      </div>
-    </div>
-  </div>
-</section>
+<div class="ticker" aria-hidden="true"><div class="track">
+  <span>Jump</span><span>Roll</span><span>Handstand</span><span>Cartwheel</span><span>Back Flip</span><span>Challenge</span>
+  <span>Jump</span><span>Roll</span><span>Handstand</span><span>Cartwheel</span><span>Back Flip</span><span>Challenge</span>
+</div></div>
 
-<!-- THEME -->
-<section id="theme">
-  <div class="wrap center">
-    <span class="tag orange">3つのテーマ</span>
-    <h2 class="sec-title">タンブ体操教室が大切にしていること</h2>
-    <p class="sec-lead">「できた！」の喜びから、生涯スポーツの入り口へ。</p>
-  </div>
-  <div class="wrap grid g3">
-    <div class="feat reveal"><div class="num n-green">1</div><div><h3>できないことが、できる喜び</h3><p>練習すれば必ずできるようになると知ってもらいます。体操は上達が目に見えてわかりやすく、子どもが自分から主体的に練習するように。一人ひとりにしっかり時間を取り、思う存分技を練習できます。</p></div></div>
-    <div class="feat reveal"><div class="num n-pink">2</div><div><h3>体幹を鍛え、体の使い方を知る</h3><p>毎回いろいろなジャンプや体幹運動を実施。エアトランポリンは通常の約2倍跳べるので、楽しみながら体幹を鍛えられます。その楽しさはぜひ一度体験してみてください！</p></div></div>
-    <div class="feat reveal"><div class="num n-orange">3</div><div><h3>好きで得意なスポーツを見つける</h3><p>小学生は関連クラブ「sowers sports club」に優先入会できます。9種類のスポーツを体験でき、好きで得意なスポーツがきっと見つかります。体操で体の使い方を知り、生涯スポーツを楽しめる生徒を目指します。</p></div></div>
-  </div>
-</section>
-
-<!-- FACILITY -->
-<section class="band">
-  <div class="wrap center">
-    <span class="tag green">教室のご案内</span>
-    <h2 class="sec-title">のびのび動ける環境</h2>
-  </div>
-  <div class="wrap grid g2">
-    <div class="card reveal"><div class="top-line tl-pink"></div><div class="ph"><img loading="lazy" src="images/5c20312784f17.jpg" alt="広い体育館"></div><div class="body"><h3>🏃 のびのび動ける広い体育館</h3><p>広い体育館で練習しているので、力が有り余るお子さんも思いきり走り回れます。練習の合間には鬼ごっこで楽しく体を温めています。</p></div></div>
-    <div class="card reveal"><div class="top-line tl-orange"></div><div class="ph"><img loading="lazy" src="images/5c18cb90a1b14.jpg" alt="アクセスの良い立地"></div><div class="body"><h3>🚗 保護者も嬉しいアクセス</h3><p>徳島県庁から南へ10分、徳島市論田町のB&G体育館。近くにマルナカ新浜店があり練習中にお買い物も。プールも隣接し夏は水遊びもできます。</p></div></div>
-  </div>
-</section>
-
-<!-- VIDEOS -->
 <section>
-  <div class="wrap center">
-    <span class="tag pink">動画で見る</span>
-    <h2 class="sec-title">練習風景・メディア紹介</h2>
-    <p class="sec-lead">阿南の教室がケーブルテレビで取り上げられました！</p>
-  </div>
-  <div class="wrap grid g2">
-    <div class="reveal"><div class="video"><iframe loading="lazy" src="https://www.youtube.com/embed/kCZHNDlj78k" title="ケーブルテレビ紹介" allowfullscreen></iframe></div></div>
-    <div class="reveal"><div class="video"><iframe loading="lazy" src="https://www.youtube.com/embed/gd8B2oi2pkc" title="練習風景" allowfullscreen></iframe></div></div>
-  </div>
-</section>
-
-<!-- SCHEDULE -->
-<section id="schedule" class="band">
-  <div class="wrap center">
-    <span class="tag orange">教室案内</span>
-    <h2 class="sec-title">クラス・練習日時</h2>
-    <p class="sec-lead">土曜日クラス（月4回レッスン）／満5歳以上のお子様対象</p>
-  </div>
-  <div class="wrap" style="max-width:680px">
-    <div class="sched reveal">
-      <div class="head">🗓️ 土曜日クラス</div>
-      <div class="row"><div><div class="cls">ジュニアA クラス</div><div class="time">10:30 〜 11:30</div></div><span class="seat">残り1組</span></div>
-      <div class="row"><div><div class="cls">ジュニアB クラス</div><div class="time">11:45 〜 12:45</div></div><span class="seat">残り2組</span></div>
-      <div class="row"><div><div class="cls">ジュニアC クラス</div><div class="time">13:00 〜 14:00</div></div><span class="seat">残り1組</span></div>
+  <div class="wrap intro">
+    <div class="body rv">
+      <p class="eyebrow">教室について</p>
+      <h2>はじめての子も、<br><span class="u">夢中になれる</span>体操教室。</h2>
+      <p>空気でふくらむエアトランポリン（エアトラックマット）は、マットとトランポリンの間のような弾む床。小さな力でも高く跳べて、転んでも痛くありません。だから、運動が苦手な子も、はじめての子も、思いきってチャレンジできます。</p>
+      <p>前転・側転・倒立から、ブリッジ、そしてバク転まで。一人ひとりのペースに合わせて、「できた！」を一つずつ積み重ねていきます。</p>
     </div>
-    <div class="note reveal" style="border-left-color:var(--orange)">📅 <strong>基本は月4回開催</strong>です。GW・お盆・年末年始などの長期休暇がある月は、月3回になる場合がございます。</div>
-    <div class="prep reveal">
-      <span>👕 動きやすい服装</span><span>🧴 タオル</span><span>🥤 飲み物</span>
+    <div class="stack rv">
+      <figure class="a"><img src="p273.jpg" alt="エアトランポリンの上で回転する子ども" loading="lazy"></figure>
+      <figure class="b"><img src="p360.jpg" alt="ブロックを使って倒立回転に挑戦する子ども" loading="lazy"></figure>
+      <div class="stamp"><span><b>安全</b>エアトラック<br>だから</span></div>
     </div>
-    <div class="note reveal">📅 お休みしても<strong>振替が取りやすい</strong>から、お仕事やご家庭の予定で忙しい方も、無理なく続けられます。</div>
   </div>
 </section>
 
-<!-- ACCESS -->
-<section id="access">
-  <div class="wrap center">
-    <span class="tag green">練習場所</span>
-    <h2 class="sec-title">徳島市B&G武道館</h2>
-    <p class="sec-lead">徳島市論田町中開47-2</p>
-  </div>
-  <div class="wrap reveal">
-    <div class="map"><iframe loading="lazy" src="https://www.google.com/maps?q=徳島市論田町中開47-2&output=embed" allowfullscreen></iframe></div>
-  </div>
-</section>
-
-<!-- INSTRUCTOR -->
-<section class="band">
-  <div class="wrap center">
-    <span class="tag pink">指導者紹介</span>
-    <h2 class="sec-title">講師：keita</h2>
-  </div>
+<section class="chapter" aria-labelledby="c1">
+  <video class="bg" data-auto muted playsinline loop preload="none" poster="t541.jpg" src="t541.mp4" aria-hidden="true"></video>
   <div class="wrap">
-    <div class="inst reveal">
-      <div class="pic"><img loading="lazy" src="images/629f77e16bb1e.jpg" alt="指導者 keita"></div>
+    <div class="in">
+      <span class="no">01 / 03</span>
+      <p class="word" aria-hidden="true"><span>JUMP</span></p>
+      <h3 id="c1">まずは、思いきり跳ぶ。</h3>
+      <p>エアトランポリンは、普通の床の約2倍の高さまで跳べます。楽しくジャンプを繰り返すうちに、体幹やバランス感覚が自然と育ちます。</p>
+      <div class="chips"><span>ジャンプ</span><span>体幹</span><span>バランス</span></div>
+    </div>
+  </div>
+  <div class="frame"><video data-auto muted playsinline loop preload="none" poster="t811.jpg" src="t811.mp4" aria-hidden="true"></video></div>
+</section>
+
+<section class="chapter r" aria-labelledby="c2">
+  <video class="bg" data-auto muted playsinline loop preload="none" poster="t242.jpg" src="t242.mp4" aria-hidden="true"></video>
+  <div class="wrap">
+    <div class="in">
+      <span class="no">02 / 03</span>
+      <p class="word" aria-hidden="true"><span>ROLL</span></p>
+      <h3 id="c2">回る、支える、ひっくり返る。</h3>
+      <p>前転・後転・側転・倒立・ブリッジ。体操の基本の動きを、やわらかいマットの上でくり返し練習します。3か月ごとにテーマを変えるので、飽きずに続けられます。</p>
+      <div class="chips"><span>前転・後転</span><span>側転</span><span>倒立</span><span>ブリッジ</span></div>
+    </div>
+  </div>
+  <div class="frame"><video data-auto muted playsinline loop preload="none" poster="t840.jpg" src="t840.mp4" aria-hidden="true"></video></div>
+</section>
+
+<section class="chapter" aria-labelledby="c3">
+  <video class="bg" data-auto muted playsinline loop preload="none" poster="t314.jpg" src="t314.mp4" aria-hidden="true"></video>
+  <div class="wrap">
+    <div class="in">
+      <span class="no">03 / 03</span>
+      <p class="word long" aria-hidden="true"><span>CHALLENGE</span></p>
+      <h3 id="c3">いつか、バク転へ。</h3>
+      <p>補助やセーフティマットを使いながら、段階をふんでアクロバット技へ。いきなり難しい技はしません。「もう一回！」が自然に出てくる練習です。</p>
+      <div class="chips"><span>ロンダート</span><span>ハンドスプリング</span><span>バク転</span></div>
+    </div>
+  </div>
+  <div class="frame"><video data-auto muted playsinline loop preload="none" poster="t800.jpg" src="t800.mp4" aria-hidden="true"></video></div>
+</section>
+
+<section class="dark growth">
+  <div class="wrap">
+    <div class="sec-head rv"><p class="eyebrow">成長ストーリー</p><h2>できなかったことが、<br>できるようになるまで。</h2><p>実際のレッスンの様子です。先生がそばで支えながら、一人ひとりのペースで次のステップへ。</p></div>
+    <div class="rail">
+      <figure><div class="clip"><span class="step">STEP 1</span><video data-auto muted playsinline loop preload="none" poster="t148.jpg" src="t148.mp4"></video></div><figcaption><b>まずは体を動かす楽しさ</b><span>走る・跳ぶでウォーミングアップ</span></figcaption></figure>
+      <figure><div class="clip"><span class="step">STEP 2</span><video data-auto muted playsinline loop preload="none" poster="t632.jpg" src="t632.mp4"></video></div><figcaption><b>ブリッジで体をしなやかに</b><span>柔軟性と支える力</span></figcaption></figure>
+      <figure><div class="clip"><span class="step">STEP 3</span><video data-auto muted playsinline loop preload="none" poster="t241.jpg" src="t241.mp4"></video></div><figcaption><b>より難しい技にチャレンジ</b><span>宙返りなどのアクロバット技へ</span></figcaption></figure>
+      <figure><div class="clip"><span class="step">STEP 4</span><video data-auto muted playsinline loop preload="none" poster="t637.jpg" src="t637.mp4"></video></div><figcaption><b>先生と一緒に倒立</b><span>補助があるから怖くない</span></figcaption></figure>
+      <figure><div class="clip"><span class="step">STEP 5</span><video data-auto muted playsinline loop preload="none" poster="t535.jpg" src="t535.mp4"></video></div><figcaption><b>補助つきで回転技へ</b><span>体の使い方を一つずつ</span></figcaption></figure>
+      <figure><div class="clip"><span class="step">STEP 6</span><video data-auto muted playsinline loop preload="none" poster="t730.jpg" src="t730.mp4"></video></div><figcaption><b>助走をつけて大きく</b><span>エアトラックの上で思いきり</span></figcaption></figure>
+      <figure><div class="clip"><span class="step">DONE!</span><video data-auto muted playsinline loop preload="none" poster="t601.jpg" src="t601.mp4"></video></div><figcaption><b>「できた！」をハイタッチで</b><span>この瞬間のために</span></figcaption></figure>
+    </div>
+    <p class="rail-hint">横にスワイプして見られます</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head rv"><p class="eyebrow">大切にしていること</p><h2>sowers 体操教室が<br>大切にしていること</h2></div>
+    <div class="points rv">
+      <div class="point"><span class="num">01</span><h3>できないことが、できる喜び</h3><p>体操は上達が目に見えてわかりやすいスポーツ。練習すれば必ずできるようになることを知り、自分から練習する子に育ちます。</p></div>
+      <div class="point"><span class="num">02</span><h3>体の使い方を、楽しく覚える</h3><p>毎回いろいろなジャンプや体幹運動を実施。走る・跳ぶ・回る・支える、すべての運動の土台になる力を育てます。</p></div>
+      <div class="point"><span class="num">03</span><h3>好きなスポーツと出会う入り口に</h3><p>小学生は関連クラブ「sowers sports club」で、10種目ほどのスポーツを体験できます。体操で身につけた力が、次の「好き」につながります。</p></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0" id="classes">
+  <div class="wrap">
+    <div class="sec-head rv"><p class="eyebrow">クラス紹介</p><h2>年齢・レベルに合わせたクラス</h2><p>教室によってクラス名が少し異なります。どのクラスが合うか分からない場合も、LINEでお気軽にご相談ください。</p></div>
+    <div class="classes rv">
+      <div class="cls"><span class="tag">はじめての子に</span><h3>スタートクラス</h3><span class="age">満3歳〜</span><p>体操がはじめての子のためのクラス。ジャンプや前転など、体を動かす楽しさから始めます。</p></div>
+      <div class="cls"><span class="tag">基本からステップアップ</span><h3>ジュニアクラス</h3><span class="age">満5歳〜</span><p>側転・倒立・ブリッジなどの基本技から、ロンダートやハンドスプリングへ段階的にステップアップ。</p></div>
+      <div class="cls hot"><span class="tag">アクロバットに挑戦</span><h3>バク転・アクロバット</h3><span class="age">小学生〜</span><p>バク転などのアクロバット技に集中して取り組むクラス。補助とマットで安全に練習します（実施教室のみ）。</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="dark finder" id="find">
+  <div class="wrap">
+    <div class="sec-head rv"><p class="eyebrow">教室一覧</p><h2>教室を探す</h2><p>徳島県内6か所で開催しています。地域を選ぶと、曜日・時間・会場が表示されます。</p></div>
+    <div class="tabs" role="tablist" aria-label="教室">
+      <button role="tab" aria-selected="true" aria-controls="r-ronden" id="tb-ronden">徳島市（論田）<small>土</small></button>
+      <button role="tab" aria-selected="false" aria-controls="r-kitajima" id="tb-kitajima">北島<small>火</small></button>
+      <button role="tab" aria-selected="false" aria-controls="r-anan" id="tb-anan">阿南<small>水</small></button>
+      <button role="tab" aria-selected="false" aria-controls="r-komatsushima" id="tb-komatsushima">小松島<small>木</small></button>
+      <button role="tab" aria-selected="false" aria-controls="r-yoshinogawa" id="tb-yoshinogawa">吉野川<small>金</small></button>
+      <button role="tab" aria-selected="false" aria-controls="r-kamiita" id="tb-kamiita">上板<small>日</small></button>
+    </div>
+
+    <div class="room on" id="r-ronden" role="tabpanel" aria-labelledby="tb-ronden">
       <div class="info">
-        <h3>keita</h3>
-        <div class="role">アクロバット講師</div>
-        <ul>
-          <li>高校時代に男子新体操部に所属、全国国民体育大会にて団体入賞</li>
-          <li>現在は小松島高校OBチームに所属</li>
-          <li>徳島ヴォルティス専属チアダンサーチーム「BLUE SPIRIT」</li>
-        </ul>
-        <a class="btn pink" href="https://www.instagram.com/sowersnohito/" target="_blank" rel="noopener">📷 Instagramをフォロー</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CLASSROOMS -->
-<section id="classrooms">
-  <div class="wrap center">
-    <span class="tag orange">教室一覧</span>
-    <h2 class="sec-title">徳島県内の教室</h2>
-    <p class="sec-lead">お近くの教室をお選びいただけます。空き状況・無料体験はLINEでお気軽にお問い合わせください。</p>
-  </div>
-  <div class="wrap rooms">
-    <div class="room reveal">
-      <span class="area">論田</span>
-      <div class="rname">論田B&G武道館</div>
-      <div class="meta"><b>土曜日</b></div>
-      <div class="times"><span>A 10:30-11:30</span><span>B 11:45-12:45</span><span>C 13:00-14:00</span><span>AC 14:15-15:30</span></div>
-    </div>
-    <div class="room reveal">
-      <span class="area">北島</span>
-      <div class="rname">サンライフ北島</div>
-      <div class="meta"><b>火曜日</b></div>
-      <div class="times"><span>ST 16:00-16:50</span><span>A 17:00-18:00</span><span>B 18:10-19:10</span></div>
-    </div>
-    <div class="room reveal">
-      <span class="area">阿南</span>
-      <div class="rname">阿南B&G</div>
-      <div class="meta"><b>水曜日</b></div>
-      <div class="times"><span>ST 16:00-16:50</span><span>A 17:00-18:00</span><span>B 18:10-19:10</span></div>
-    </div>
-    <div class="room reveal">
-      <span class="area">吉野川</span>
-      <div class="rname">吉野川市交流センター</div>
-      <div class="meta"><b>金曜日</b></div>
-      <div class="times"><span>ST 16:00-16:50</span><span>A 17:00-18:00</span><span>B 18:10-19:10</span></div>
-    </div>
-    <div class="room reveal">
-      <span class="area">小松島</span>
-      <div class="rname">小松島市立体育館 武道館</div>
-      <div class="meta"><b>木曜日</b>（月3回）</div>
-      <div class="times"><span>ジュニア 19:00-20:00</span><span>バク転集中 20:00-21:00</span></div>
-    </div>
-    <div class="room reveal">
-      <span class="area">上板</span>
-      <div class="rname">東光小学校 体育館</div>
-      <div class="meta"><b>日曜日</b>（月3回）</div>
-      <div class="times"><span>A 10:20-11:20</span><span>B 11:30-12:30</span><span>バク転集中 13:00-14:00</span></div>
-    </div>
-  </div>
-  <div class="wrap">
-    <div class="note reveal" style="border-left-color:var(--pink)">🔄 <strong>どの教室でも振替OK！</strong> お休みしても、他の曜日・他の教室のクラスに振り替えられます。お仕事やご家庭の予定で忙しい方も無理なく続けられます。</div>
-  </div>
-</section>
-
-<!-- FAQ -->
-<section id="faq" class="band">
-  <div class="wrap center">
-    <span class="tag green">よくある質問</span>
-    <h2 class="sec-title">よくある質問</h2>
-    <p class="sec-lead">気になる項目をタップすると、答えがひらきます。</p>
-  </div>
-  <div class="wrap">
-    <div class="faq-wrap reveal">
-
-      <details class="faq-item">
-        <summary><span class="qmark">Q.</span>体操が初めてでも大丈夫ですか？</summary>
-        <div class="faq-a"><b>はい、大丈夫です。</b> 徳島タンブ体操教室では、体操が初めてのお子さまでも楽しく参加できるように、基礎からゆっくり進めていきます。エアトランポリンやマットを使いながら、まずは「体を動かす楽しさ」や「空中で体を動かす感覚」を楽しく身につけていきます。</div>
-      </details>
-
-      <details class="faq-item">
-        <summary><span class="qmark">Q.</span>何歳から参加できますか？</summary>
-        <div class="faq-a"><b>5歳からご参加いただけます。</b> 年齢や運動経験に合わせて、無理なく参加できるクラスをご案内いたします。初めてのお子さまも、まずはお気軽にLINEにてご相談ください。</div>
-      </details>
-
-      <details class="faq-item">
-        <summary><span class="qmark">Q.</span>運動が苦手でも参加できますか？</summary>
-        <div class="faq-a"><b>はい、もちろん参加できます。</b> 体操教室は、運動が得意なお子さまだけの場所ではありません。エアトランポリンやマットを使って、跳ぶ・転がる・支える・バランスをとるなど、いろいろな動きを楽しみながら、少しずつ体の使い方を身につけていきます。</div>
-      </details>
-
-      <details class="faq-item">
-        <summary><span class="qmark">Q.</span>人見知りの子でも大丈夫ですか？</summary>
-        <div class="faq-a"><b>大丈夫です。</b> 最初は緊張してしまうお子さまも多いですが、先生やお友だちと一緒に少しずつ慣れていけるようサポートします。無理に参加を促すのではなく、お子さまのペースを大切にしながら進めていきます。</div>
-      </details>
-
-      <details class="faq-item">
-        <summary><span class="qmark">Q.</span>男の子でも女の子でも参加できますか？</summary>
-        <div class="faq-a"><b>はい、男の子も女の子も参加できます。</b> 体操は、柔軟性・バランス感覚・筋力・リズム感など、さまざまな運動能力を育てられる習い事です。性別に関係なく、楽しく体を動かしたいお子さまにおすすめです。</div>
-      </details>
-
-      <details class="faq-item">
-        <summary><span class="qmark">Q.</span>体験レッスンはできますか？</summary>
-        <div class="faq-a"><b>はい、体験レッスンを受け付けています。</b> 初めての場所や雰囲気に緊張して、最初は見学だけになってしまうお子さまもいらっしゃいます。その場合も無理に参加しなくて大丈夫です。お子さまのペースに合わせて、安心してお越しください。</div>
-      </details>
-
-      <details class="faq-item">
-        <summary><span class="qmark">Q.</span>体験の時は何を持っていけばいいですか？</summary>
-        <div class="faq-a"><b>動きやすい服装、飲み物、タオルをお持ちください。</b> 服装は、Tシャツ・短パン・ジャージなど、動きやすいもので大丈夫です。</div>
-      </details>
-
-      <details class="faq-item">
-        <summary><span class="qmark">Q.</span>保護者はレッスンを見学できますか？</summary>
-        <div class="faq-a"><b>はい、見学できます。</b> お子さまの様子を見ながら、安心して体験・ご入会をご検討いただけます。ただし、会場の状況によっては見学スペースに限りがある場合があります。</div>
-      </details>
-
-      <details class="faq-item">
-        <summary><span class="qmark">Q.</span>どんな内容をしますか？</summary>
-        <div class="faq-a"><b>エアトランポリンやマットを使って、体を動かす楽しさを大切にしながらレッスンを行います。</b> 前転・後転・側転・倒立・ブリッジなどの基本的な技から、バク転などのアクロバット系の技にも段階的に挑戦していきます。また、3ヶ月ごとに練習内容や挑戦する技を変更していくため、飽きずに楽しくステップアップしていけます。</div>
-      </details>
-
-      <details class="faq-item">
-        <summary><span class="qmark">Q.</span>バク転も習えますか？</summary>
-        <div class="faq-a"><b>はい、クラスやレベルに応じてバク転にも挑戦できます。</b> トランポリンやマットを使いながら、安全面に配慮して段階的に練習していきます。いきなり難しい技を行うのではなく、ジャンプ・倒立・補助練習などを通して、無理なくステップアップしていきます。</div>
-      </details>
-
-      <details class="faq-item">
-        <summary><span class="qmark">Q.</span>休んだ場合の振替はありますか？</summary>
-        <div class="faq-a"><b>はい、振替可能です。</b> お休みされた場合は、他のクラスへ参加していただくこともできます。ご都合に合わせて、無理なく通っていただけるように対応しています。</div>
-      </details>
-
-      <details class="faq-item">
-        <summary><span class="qmark">Q.</span>きょうだいで参加できますか？</summary>
-        <div class="faq-a"><b>はい、きょうだいでの参加も可能です。</b> 年齢やレベルが違う場合でも、それぞれに合ったクラスをご案内いたします。まずはお気軽にご相談ください。</div>
-      </details>
-
-      <details class="faq-item">
-        <summary><span class="qmark">Q.</span>体が硬くても大丈夫ですか？</summary>
-        <div class="faq-a"><b>大丈夫です。</b> 最初から柔らかい必要はありません。レッスンの中で少しずつ柔軟や体の使い方を練習していくので、無理なく成長していけます。</div>
-      </details>
-
-      <details class="faq-item">
-        <summary><span class="qmark">Q.</span>申し込みや体験予約はどうすればいいですか？</summary>
-        <div class="faq-a"><b>LINEよりお気軽にお問い合わせください。</b> 体験をご希望の場合は、以下の内容を送っていただけるとスムーズです。
-          <ul>
-            <li>お子さまのお名前</li>
-            <li>年齢／学年</li>
-            <li>体験希望の教室</li>
-            <li>体操経験の有無</li>
-          </ul>
+        <div class="title"><h3>徳島タンブ体操教室</h3><span class="day">土曜</span></div>
+        <p class="addr">徳島市B&amp;G海洋センター（武道館）／徳島市論田町中開47-2</p>
+        <div class="slots">
+          <div class="slot"><span class="t">10:30–11:30</span><span class="n">Aクラス</span></div>
+          <div class="slot"><span class="t">11:45–12:45</span><span class="n">Bクラス</span></div>
+          <div class="slot"><span class="t">13:00–14:00</span><span class="n">Cクラス</span></div>
+          <div class="slot"><span class="t">14:15–15:30</span><span class="n">アクロバットクラス</span></div>
         </div>
-      </details>
-
-    </div>
-    <p class="faq-foot">ほかにも気になることがあれば、お気軽にLINEでご相談ください 😊</p>
-  </div>
-</section>
-
-<!-- CTA -->
-<section>
-  <div class="wrap">
-    <div class="cta reveal">
-      <h2>まずは無料体験から！</h2>
-      <p>初心者・運動が苦手なお子さんも大歓迎。お気軽にお問い合わせください。</p>
-      <div class="cta-row" style="justify-content:center">
-        <a class="btn" href="https://lin.ee/Q6KsIKI" target="_blank" rel="noopener">📱 LINEで無料体験を申し込む</a>
-        <a class="btn alt" href="mailto:k.k_1012@me.com">✉️ メールで問い合わせる</a>
+        <div class="fee"><b>7,000円／月</b><span>毎週土曜（長期休暇のある月は月3回の場合あり）</span></div>
       </div>
+      <div class="mapbox"><iframe data-src="https://www.google.com/maps?q=%E5%BE%B3%E5%B3%B6%E5%B8%82B%26G%E6%B5%B7%E6%B4%8B%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC%20%E5%BE%B3%E5%B3%B6%E5%B8%82%E8%AB%96%E7%94%B0%E7%94%BA%E4%B8%AD%E9%96%8B47-2&z=15&output=embed" title="徳島市B&G海洋センターの地図" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+    </div>
+
+    <div class="room" id="r-kitajima" role="tabpanel" aria-labelledby="tb-kitajima">
+      <div class="info">
+        <div class="title"><h3>北島ステップ体操教室</h3><span class="day">火曜</span></div>
+        <p class="addr">サンライフ北島／板野郡北島町中村字川田9-1</p>
+        <div class="slots">
+          <div class="slot"><span class="t">16:00–16:50</span><span class="n">スタートクラス</span></div>
+          <div class="slot"><span class="t">17:00–18:00</span><span class="n">ジュニアAクラス</span></div>
+          <div class="slot"><span class="t">18:10–19:10</span><span class="n">ジュニアBクラス</span></div>
+        </div>
+        <div class="fee"><b>5,000円／6,500円</b><span>スタート／ジュニア（月謝）・毎週火曜</span></div>
+      </div>
+      <div class="mapbox"><iframe data-src="https://www.google.com/maps?q=%E3%82%B5%E3%83%B3%E3%83%A9%E3%82%A4%E3%83%95%E5%8C%97%E5%B3%B6%20%E6%9D%BF%E9%87%8E%E9%83%A1%E5%8C%97%E5%B3%B6%E7%94%BA%E4%B8%AD%E6%9D%91%E5%AD%97%E5%B7%9D%E7%94%B09-1&z=15&output=embed" title="サンライフ北島の地図" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+    </div>
+
+    <div class="room" id="r-anan" role="tabpanel" aria-labelledby="tb-anan">
+      <div class="info">
+        <div class="title"><h3>阿南ジャンプ体操教室</h3><span class="day">水曜</span></div>
+        <p class="addr">阿南B&amp;G海洋センター 体育館</p>
+        <div class="slots">
+          <div class="slot"><span class="t">16:00–16:50</span><span class="n">スタートクラス</span></div>
+          <div class="slot"><span class="t">17:00–18:00</span><span class="n">ジュニアAクラス</span></div>
+          <div class="slot"><span class="t">18:10–19:10</span><span class="n">ジュニアBクラス</span></div>
+        </div>
+        <div class="fee"><b>5,000円／6,500円</b><span>スタート／ジュニア（月謝）・毎週水曜</span></div>
+      </div>
+      <div class="mapbox"><iframe data-src="https://www.google.com/maps?q=%E9%98%BF%E5%8D%97B%26G%E6%B5%B7%E6%B4%8B%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC&z=15&output=embed" title="阿南B&G海洋センターの地図" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+    </div>
+
+    <div class="room" id="r-komatsushima" role="tabpanel" aria-labelledby="tb-komatsushima">
+      <div class="info">
+        <div class="title"><h3>小松島フレッシュ体操教室</h3><span class="day">木曜</span></div>
+        <p class="addr">小松島市立体育館</p>
+        <div class="slots">
+          <div class="slot"><span class="t">19:00–20:00</span><span class="n">ジュニアクラス</span></div>
+          <div class="slot"><span class="t">20:00–21:00</span><span class="n">バク転クラス</span></div>
+        </div>
+        <div class="fee"><b>月3回</b><span>木曜開催・月謝はLINEでご案内します</span></div>
+      </div>
+      <div class="mapbox"><iframe data-src="https://www.google.com/maps?q=%E5%B0%8F%E6%9D%BE%E5%B3%B6%E5%B8%82%E7%AB%8B%E4%BD%93%E8%82%B2%E9%A4%A8&z=15&output=embed" title="小松島市立体育館の地図" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+    </div>
+
+    <div class="room" id="r-yoshinogawa" role="tabpanel" aria-labelledby="tb-yoshinogawa">
+      <div class="info">
+        <div class="title"><h3>吉野川ホップ体操教室</h3><span class="day">金曜</span></div>
+        <p class="addr">吉野川市交流センター</p>
+        <div class="slots">
+          <div class="slot"><span class="t">16:00–16:50</span><span class="n">スタートクラス</span></div>
+          <div class="slot"><span class="t">17:00–18:00</span><span class="n">ジュニアAクラス</span></div>
+          <div class="slot"><span class="t">18:10–19:10</span><span class="n">ジュニアBクラス</span></div>
+        </div>
+        <div class="fee"><b>5,000円／6,500円</b><span>スタート／ジュニア（月謝）・毎週金曜</span></div>
+      </div>
+      <div class="mapbox"><iframe data-src="https://www.google.com/maps?q=%E5%90%89%E9%87%8E%E5%B7%9D%E5%B8%82%E4%BA%A4%E6%B5%81%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC&z=15&output=embed" title="吉野川市交流センターの地図" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+    </div>
+
+    <div class="room" id="r-kamiita" role="tabpanel" aria-labelledby="tb-kamiita">
+      <div class="info">
+        <div class="title"><h3>上板フレッシュ体操教室</h3><span class="day">日曜</span></div>
+        <p class="addr">上板町立東光小学校 体育館</p>
+        <div class="slots">
+          <div class="slot"><span class="t">10:20–11:20</span><span class="n">Aクラス</span></div>
+          <div class="slot"><span class="t">11:30–12:30</span><span class="n">Bクラス</span></div>
+          <div class="slot"><span class="t">13:00–14:00</span><span class="n">バク転クラス</span></div>
+        </div>
+        <div class="fee"><b>月3回</b><span>日曜開催・月謝はLINEでご案内します</span></div>
+      </div>
+      <div class="mapbox"><iframe data-src="https://www.google.com/maps?q=%E4%B8%8A%E6%9D%BF%E7%94%BA%E7%AB%8B%E6%9D%B1%E5%85%89%E5%B0%8F%E5%AD%A6%E6%A0%A1&z=15&output=embed" title="上板町立東光小学校の地図" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+    </div>
+
+    <div class="swap rv"><svg><use href="#i-swap"/></svg><p><b>どの教室でも振替OK。</b>お休みした週は、徳島県内の別の曜日・別の教室に振り替えて参加できます。</p></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap teacher rv">
+    <div class="mono"><img src="logo.png" alt="" width="180" height="180"></div>
+    <div>
+      <p class="eyebrow">講師紹介</p>
+      <p class="role">代表・アクロバット講師</p>
+      <h3>けいた 先生</h3>
+      <ul>
+        <li>高校時代に男子新体操部に所属し、国民体育大会で団体入賞</li>
+        <li>徳島ヴォルティス専属チアダンスチーム「BLUE SPIRITS」アクロバットコーチ</li>
+        <li>sowers sports club 代表</li>
+      </ul>
+      <p class="note">各教室では、経験豊富なサポートの先生たちと一緒に指導しています。</p>
     </div>
   </div>
 </section>
 
-<!-- RELATED -->
-<section class="band">
-  <div class="wrap center">
-    <span class="tag orange">他の教室のご紹介</span>
-    <h2 class="sec-title">関連クラブ</h2>
+<section style="padding-top:0" id="faq">
+  <div class="wrap">
+    <div class="sec-head rv"><p class="eyebrow">よくある質問</p><h2>よくある質問</h2></div>
+    <div class="faq">
+      <details><summary>体操がはじめて・運動が苦手でも大丈夫ですか？</summary><p>大丈夫です。エアトランポリンやマットを使い、跳ぶ・転がる・支えるなどの基本から少しずつ進めます。初めての子も、自分のペースで楽しめます。</p></details>
+      <details><summary>何歳から参加できますか？</summary><p>スタートクラスがある教室は満3歳から、ジュニアクラスは満5歳からが目安です。年齢や経験に合わせてクラスをご案内しますので、LINEでご相談ください。</p></details>
+      <details><summary>バク転も習えますか？</summary><p>はい。クラスやレベルに応じて、ジャンプ・倒立・補助練習などを通して段階的に挑戦します。いきなり難しい技は行いません。</p></details>
+      <details><summary>休んだ場合の振替はありますか？</summary><p>はい。徳島県内の体操教室であれば、別の曜日・別の教室のクラスに振り替えて参加できます。</p></details>
+      <details><summary>体験のときの持ち物は？</summary><p>動きやすい服装（Tシャツ・短パン・ジャージなど）、タオル、飲み物をお持ちください。</p></details>
+      <details><summary>保護者は見学できますか？</summary><p>はい、見学できます。会場によって見学スペースに限りがある場合があります。</p></details>
+      <details><summary>人見知りで、最初は見学だけになりそうです。</summary><p>まったく問題ありません。お子さまのペースを大切にしているので、見学だけの体験でも大丈夫です。</p></details>
+      <details><summary>きょうだいで参加できますか？</summary><p>はい。年齢やレベルが違っても、それぞれに合ったクラスをご案内します。</p></details>
+    </div>
   </div>
-  <div class="wrap grid g2 rel">
-    <div class="card reveal"><div class="top-line tl-green"></div><div class="ph"><img loading="lazy" src="images/5e0e7240b96cc.jpg" alt="sowers sports club"></div><div class="body"><h3>sowers sports club</h3><p>様々なスポーツを通して「好き」と「得意」を見つけるお手伝い。月額2000円で9種類のスポーツが体験できます！</p><a class="btn green" href="https://sowers-club-hp.vercel.app" target="_blank" rel="noopener">sowers HPへ →</a></div></div>
-    <div class="card reveal"><div class="top-line tl-pink"></div><div class="ph"><img loading="lazy" src="images/622ae25f4398b.jpg" alt="sowers sports circle"></div><div class="body"><h3>sowers sports circle</h3><p>徳島の社会人スポーツサークル。フットサル・バドミントン・バレー・バスケ・バク転をワンコイン500円で。月額無料・道具不要・1人参加歓迎！（中学生以上）</p><a class="btn pink" href="https://sowers-circle-hp.vercel.app" target="_blank" rel="noopener">サークルHPへ →</a></div></div>
+</section>
+
+<section class="final">
+  <video data-auto muted playsinline loop preload="none" poster="t931.jpg" src="t931.mp4" aria-hidden="true"></video>
+  <div class="wrap in rv">
+    <p class="eyebrow">無料体験</p>
+    <h2>次の「できた！」は、<br><span>ここから。</span></h2>
+    <p class="lead">無料体験のご予約は公式LINEから。見学だけでも大歓迎です。</p>
+    <a class="btn btn-line" href="https://lin.ee/Q6KsIKI" target="_blank" rel="noopener"><svg><use href="#i-line"/></svg>LINEで無料体験を予約する</a>
   </div>
 </section>
 
 <footer>
-  <div class="wrap grid-f">
-    <div>
-      <div class="brand" style="display:flex;align-items:center;gap:10px;font-family:'M PLUS Rounded 1c';font-weight:800;font-size:1.15rem">
-        <img class="logo" src="logo.png" alt="徳島タンブ体操教室のロゴ" width="42" height="42" />徳島タンブ体操教室
-      </div>
-      <p style="margin-top:12px;max-width:360px;color:#aeb8c2;font-size:.92rem">幼稚園・小学生のためのエアトラック体操教室。小松島・八万・論田・津田・藍住・川内エリア。</p>
-    </div>
-    <div class="fcontact">
-      <strong style="color:#fff">お問い合わせ</strong><br>
-      <a href="https://lin.ee/Q6KsIKI" target="_blank" rel="noopener">📱 LINEで無料体験</a><br>
-      <a href="mailto:k.k_1012@me.com">✉️ k.k_1012@me.com</a><br>
-      <a href="https://www.instagram.com/sowersnohito/" target="_blank" rel="noopener">📷 Instagram</a>
-    </div>
+  <div class="wrap">
+    <div class="row"><img src="logo.png" alt="" width="46" height="46"><strong>sowers 体操教室</strong></div>
+    <span>徳島タンブ（論田）／北島ステップ／阿南ジャンプ／小松島フレッシュ／吉野川ホップ／上板フレッシュ</span>
+    <div class="links"><a href="https://www.instagram.com/sowersnohito/" target="_blank" rel="noopener">Instagram</a><a href="https://sowers-club-hp.vercel.app" target="_blank" rel="noopener">sowers sports club</a></div>
+    <span>運営：sowers株式会社</span>
   </div>
-  <div class="wrap copy">© 2018–2026 徳島タンブ体操教室</div>
 </footer>
 
+<div class="sticky" id="sticky"><a class="btn btn-line" href="https://lin.ee/Q6KsIKI" target="_blank" rel="noopener"><svg><use href="#i-line"/></svg>LINEで無料体験を予約</a></div>
+</div>
 <script>
-  const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
-  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+(function(){
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // header solid on scroll / sticky CTA hidden at hero & final
+  var bar = document.getElementById('bar'), sticky = document.getElementById('sticky');
+  var hero = document.getElementById('top'), fin = document.querySelector('.final');
+  function onScroll(){
+    var y = window.scrollY || 0;
+    bar.classList.toggle('solid', y > 40);
+    var h = hero.offsetHeight * .6, fr = fin.getBoundingClientRect();
+    sticky.classList.toggle('hide', y < h || fr.top < window.innerHeight * .8);
+  }
+  window.addEventListener('scroll', onScroll, {passive:true}); onScroll();
+
+  // hero reel: each column cycles its playlist with a crossfade
+  document.querySelectorAll('.reel .col').forEach(function(col, ci){
+    var list = (col.getAttribute('data-clips') || '').split(',').filter(Boolean);
+    if (!list.length) return;
+    var a = document.createElement('video'), b = document.createElement('video');
+    [a, b].forEach(function(v){ v.muted = true; v.playsInline = true; v.setAttribute('playsinline',''); v.setAttribute('muted',''); v.preload = 'auto'; v.setAttribute('aria-hidden','true'); col.appendChild(v); });
+    var i = 0, cur = a, nxt = b;
+    cur.poster = list[i] + '.jpg'; cur.src = list[i] + '.mp4';
+    nxt.className = 'off';
+    if (reduce) return;
+    function queue(){ var j = (i + 1) % list.length; nxt.src = list[j] + '.mp4'; nxt.load(); }
+    function swap(){
+      i = (i + 1) % list.length;
+      var p = nxt.play(); if (p && p.catch) p.catch(function(){});
+      nxt.classList.remove('off'); cur.classList.add('off');
+      var t = cur; cur = nxt; nxt = t;
+      setTimeout(queue, 900);
+    }
+    cur.addEventListener('ended', swap); nxt.addEventListener('ended', swap);
+    setTimeout(function(){ var p = cur.play(); if (p && p.catch) p.catch(function(){}); }, ci * 450);
+    if (list.length > 1) queue(); else cur.loop = true;
+  });
+
+  // tabs for classrooms (maps load on first open)
+  var tabs = document.querySelectorAll('.finder [role=tab]');
+  function openRoom(btn){
+    tabs.forEach(function(t){ var on = t === btn; t.setAttribute('aria-selected', on); document.getElementById(t.getAttribute('aria-controls')).classList.toggle('on', on); });
+    var f = document.getElementById(btn.getAttribute('aria-controls')).querySelector('iframe[data-src]');
+    if (f && !f.src) f.src = f.getAttribute('data-src');
+  }
+  tabs.forEach(function(t){ t.addEventListener('click', function(){ openRoom(t); }); });
+
+  var vids = document.querySelectorAll('video[data-auto]');
+  vids.forEach(function(v){ v.muted = true; v.playsInline = true; v.loop = true; });
+  var rvs = document.querySelectorAll('.rv'), words = document.querySelectorAll('.chapter .word');
+  if (!('IntersectionObserver' in window)) { openRoom(tabs[0]); return; }
+
+  // first map when the finder approaches
+  var fo = new IntersectionObserver(function(es){ if (es[0].isIntersecting){ openRoom(document.querySelector('.finder [aria-selected=true]')); fo.disconnect(); } }, {rootMargin:'300px'});
+  fo.observe(document.getElementById('find'));
+
+  if (reduce) return;
+  var io = new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      var v = e.target;
+      if (e.isIntersecting){ var p = v.play(); if (p && p.catch) p.catch(function(){}); } else v.pause();
+    });
+  }, {threshold: .2});
+  vids.forEach(function(v){ io.observe(v); });
+
+  rvs.forEach(function(el){ el.classList.add('pre'); });
+  words.forEach(function(el){ el.classList.add('pre'); });
+  var ro = new IntersectionObserver(function(es){
+    es.forEach(function(e){ if (e.isIntersecting){ e.target.classList.remove('pre'); ro.unobserve(e.target); } });
+  }, {threshold: 0, rootMargin: '0px 0px -8% 0px'});
+  rvs.forEach(function(el){ ro.observe(el); });
+  words.forEach(function(el){ ro.observe(el); });
+})();
 </script>
 </body>
 </html>
